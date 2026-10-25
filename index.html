@@ -1,5 +1,5 @@
 <!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><title>二結點歌本(Web)</title><style>
-html{font-size:18px;background:#10131b;color:#f2f4fa;font-family:"Microsoft JhengHei","PingFang TC",system-ui,sans-serif}html[data-theme="light"]{background:#f3f5f9;color:#182235}body{margin:0;padding:0 10px;box-sizing:border-box}body>*{min-width:0}button,input,select{font:inherit}button{cursor:pointer;min-height:44px}button:disabled{cursor:wait}.wrap{--bg:#10131b;--card:#1b2130;--text:#f2f4fa;--line:#343f55;--radius:14px;position:relative;min-width:0}html[data-theme="light"] .wrap{--bg:#fff;--card:#f3f5f9;--text:#182235;--line:#d8dfeb}.btn{font-size:18px;border-radius:10px;padding:6px 10px;background:var(--card);color:var(--text);border:1px solid var(--line);text-decoration:none;display:inline-flex;align-items:center;justify-content:center}.p126-appearance{position:fixed;inset:10px;z-index:1000;margin:auto;padding:20px;max-width:480px;max-height:calc(100dvh - 20px);overflow:auto;box-sizing:border-box;border:2px solid var(--line);border-radius:14px;background:var(--card);color:var(--text)}.p126-appearance label{display:flex;gap:12px;align-items:center;margin:12px 0;min-height:44px}.p126-appearance input{width:24px;height:24px}.p126-appearance button{margin:5px;white-space:normal}.p126-appearance h2{font-size:1.2rem}#p126BridgeNotice{position:sticky;top:0;z-index:1002;padding:10px;background:var(--card);color:var(--text);border:1px solid var(--line)}
+html{font-size:27px;background:#10131b;color:#f2f4fa;font-family:"Microsoft JhengHei","PingFang TC",system-ui,sans-serif}html[data-theme="light"]{background:#f3f5f9;color:#182235}body{margin:0;padding:0 10px;box-sizing:border-box}body>*{min-width:0}button,input,select{font:inherit}button{cursor:pointer;min-height:44px}button:disabled{cursor:wait}.wrap{--bg:#10131b;--card:#1b2130;--text:#f2f4fa;--line:#343f55;--radius:14px;position:relative;min-width:0}html[data-theme="light"] .wrap{--bg:#fff;--card:#f3f5f9;--text:#182235;--line:#d8dfeb}.btn{font-size:27px;border-radius:10px;padding:6px 10px;background:var(--card);color:var(--text);border:1px solid var(--line);text-decoration:none;display:inline-flex;align-items:center;justify-content:center}.p126-appearance{position:fixed;inset:10px;z-index:1000;margin:auto;padding:20px;max-width:480px;max-height:calc(100dvh - 20px);overflow:auto;box-sizing:border-box;border:2px solid var(--line);border-radius:14px;background:var(--card);color:var(--text)}.p126-appearance label{display:flex;gap:12px;align-items:center;margin:12px 0;min-height:44px}.p126-appearance input{width:24px;height:24px}.p126-appearance button{margin:5px;white-space:normal}.p126-appearance h2{font-size:1.2rem}#p126BridgeNotice{position:sticky;top:0;z-index:1002;padding:10px;background:var(--card);color:var(--text);border:1px solid var(--line)}
 .p126-app {
   --p126-bg: #fff;
   --p126-surface: #f3f5f9;
@@ -20,7 +20,7 @@ html{font-size:18px;background:#10131b;color:#f2f4fa;font-family:"Microsoft Jhen
   border-radius: 18px;
   background: var(--p126-bg);
   color: var(--p126-ink);
-  font: 400 var(--p126-size, 18px)/1.4 "Microsoft JhengHei", "PingFang TC", system-ui, sans-serif;
+  font: 400 calc(var(--p126-size, 18px) * 1.5)/1.4 "Microsoft JhengHei", "PingFang TC", system-ui, sans-serif;
   color-scheme: light;
   position: relative;
 }
@@ -39,8 +39,8 @@ html{font-size:18px;background:#10131b;color:#f2f4fa;font-family:"Microsoft Jhen
 .p126-app *, .p126-app *::before, .p126-app *::after { box-sizing: border-box; }
 .p126-app [hidden] { display: none !important; }
 .p126-app h1, .p126-app h2, .p126-app h3, .p126-app p { margin: 0; }
-.p126-app h1 { font-size: 1.2em; line-height: 1.35; font-weight: 600; }
-.p126-app h2, .p126-app h3 { font-size: 1em; line-height: 1.4; font-weight: 600; }
+.p126-app h1 { font-size:1.2em; line-height: 1.35; font-weight: 600; }
+.p126-app h2, .p126-app h3 { font-size:1em; line-height: 1.4; font-weight: 600; }
 .p126-app button, .p126-app input, .p126-app select { font: inherit; color: inherit; }
 .p126-app button {
   min-width: 44px;
@@ -51,7 +51,7 @@ html{font-size:18px;background:#10131b;color:#f2f4fa;font-family:"Microsoft Jhen
   padding: 8px 10px;
   background: var(--p126-bg);
   color: var(--p126-ink);
-  font-size: max(16px, .88em);
+  font-size:max(24px, .88em);
   line-height: 1.35;
   white-space: normal;
   overflow-wrap: anywhere;
@@ -71,7 +71,7 @@ html{font-size:18px;background:#10131b;color:#f2f4fa;font-family:"Microsoft Jhen
   border-radius: 9px;
   background: var(--p126-bg);
   padding: 8px 10px;
-  font-size: max(16px, 1em);
+  font-size:max(24px, 1em);
 }
 .p126-app input[type="checkbox"] { flex: none; width: 22px; height: 22px; accent-color: var(--p126-accent); }
 .p126-app .p126-head {
@@ -88,16 +88,16 @@ html{font-size:18px;background:#10131b;color:#f2f4fa;font-family:"Microsoft Jhen
   z-index: auto;
 }
 .p126-app .p126-heading { flex: 1 1 130px; min-width: 0; overflow-wrap: anywhere; }
-.p126-app .p126-kicker { color: var(--p126-sub); font-size: 12px; letter-spacing: .08em; margin-bottom: 3px; }
+.p126-app .p126-kicker { color: var(--p126-sub); font-size:18px; letter-spacing: .08em; margin-bottom: 3px; }
 .p126-app .headerBtns { display: flex; flex: 0 1 auto; flex-wrap: wrap; max-width: 100%; min-width: 0; gap: 6px; }
 .p126-app .p126-main { min-width: 0; }
 .p126-app .p126-search { display: flex; align-items: center; gap: 7px; padding: 4px 14px 8px; }
 .p126-app .p126-search label { flex: 1; min-width: 0; }
 .p126-app .p126-search button { flex: none; }
 .p126-app .p126-tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; padding: 0 14px 8px; }
-.p126-app .p126-count, .p126-app .p126-note { color: var(--p126-sub); font-size: max(14px, .78em); overflow-wrap: anywhere; }
+.p126-app .p126-count, .p126-app .p126-note { color: var(--p126-sub); font-size:max(21px, .78em); overflow-wrap: anywhere; }
 .p126-app .p126-summary { padding: 0 14px 8px; min-height: 28px; }
-.p126-app .p126-status { color: var(--p126-accent); overflow-wrap: anywhere; font-size: max(14px, .78em); padding: 6px 14px; min-height: 0; }
+.p126-app .p126-status { color: var(--p126-accent); overflow-wrap: anywhere; font-size:max(21px, .78em); padding: 6px 14px; min-height: 0; }
 .p126-app .p126-status:empty { padding: 0; }
 .p126-app .p126-status[data-error="true"] { color: var(--p126-warn); }
 .p126-app .p126-viewport { height: min(62dvh, 720px); min-height: 220px; overflow: auto; overscroll-behavior: contain; position: relative; margin: 0 14px; overflow-anchor: none; }
@@ -118,9 +118,9 @@ html{font-size:18px;background:#10131b;color:#f2f4fa;font-family:"Microsoft Jhen
 }
 .p126-app .p126-song-main { min-width: 0; }
 .p126-app button.p126-title-button { display: block; width: 100%; min-width: 0; min-height: 0; padding: 0; border: 0; background: transparent; border-radius: 0; text-align: left; }
-.p126-app .p126-song-title { display: block; font-size: calc(1em + 3px); font-weight: 600; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.p126-app .p126-song-sub { display: block; color: var(--p126-sub); font-size: 1em; line-height: 1.35; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.p126-app .p126-song-members { color: var(--p126-sub); font-size: 13px; line-height: 1.4; margin-top: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.p126-app .p126-song-title { display: block; font-size:calc(1em + 4.5px); font-weight: 600; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.p126-app .p126-song-sub { display: block; color: var(--p126-sub); font-size:1em; line-height: 1.35; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.p126-app .p126-song-members { color: var(--p126-sub); font-size:19.5px; line-height: 1.4; margin-top: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .p126-app .p126-add { flex: none; min-width: 54px; color: var(--p126-accent); background: var(--p126-accent-bg); border-color: transparent; }
 .p126-app .p126-person-icon { width: 44px; min-width: 44px; min-height: 44px; padding: 9px; display: inline-flex; align-items: center; justify-content: center; }
 .p126-app .p126-person-icon svg { display: block; width: 22px; height: 22px; flex: none; }
@@ -128,7 +128,7 @@ html{font-size:18px;background:#10131b;color:#f2f4fa;font-family:"Microsoft Jhen
 .p126-app .p126-empty { display: grid; gap: 10px; padding: 38px 16px; text-align: center; }
 .p126-app .p126-form { display: grid; gap: 18px; padding: 10px 14px; max-width: 700px; margin: auto; }
 .p126-app .p126-field { display: grid; min-width: 0; gap: 7px; }
-.p126-app .p126-field-label { font-size: .9em; font-weight: 600; }
+.p126-app .p126-field-label { font-size:.9em; font-weight: 600; }
 .p126-app .p126-actions { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 14px 16px; }
 .p126-app .p126-actions > button { flex: 1 1 100px; }
 .p126-app .p126-choice { display: flex; gap: 11px; align-items: center; min-height: 58px; padding: 9px 0; border-bottom: 1px solid var(--p126-line); }
@@ -157,10 +157,10 @@ html{font-size:18px;background:#10131b;color:#f2f4fa;font-family:"Microsoft Jhen
 .p126-app .p126-draw-copy { width: 100%; min-height: 120px; font: inherit; color: inherit; background: var(--p126-bg); border: 1px solid var(--p126-line); padding: 8px; box-sizing: border-box; }
 .p126-app .p126-detail { display: grid; gap: 12px; padding: 10px 14px 20px; overflow-wrap: anywhere; }
 .p126-app .p126-detail dl { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 8px 12px; margin: 0; }
-.p126-app .p126-detail dt { color: var(--p126-sub); font-size: .85em; }
+.p126-app .p126-detail dt { color: var(--p126-sub); font-size:.85em; }
 .p126-app .p126-detail dd { margin: 0; min-width: 0; }
 .p126-app .p126-detail-copy { display:block; width:100%; min-height:120px; font:inherit; color:inherit; background:var(--p126-bg); border:1px solid var(--p126-line); padding:8px; box-sizing:border-box; }
-.p126-app .p126-foot { padding: 10px 14px; font-size: 12px; color: var(--p126-sub); border-top: 1px solid var(--p126-line); }
+.p126-app .p126-foot { padding: 10px 14px; font-size:18px; color: var(--p126-sub); border-top: 1px solid var(--p126-line); }
 .p126-app .p126-sr { position: absolute; width: 1px; height: 1px; clip-path: inset(50%); overflow: hidden; white-space: nowrap; }
 @media (max-width: 380px) {
   .p126-app { border-radius: 12px; }
@@ -188,26 +188,26 @@ html[data-theme="light"] #phtoolsLifecycleNotice { --card:#f3f5f9; --text:#18223
 /* A: compact header and exactly one business drawer. */
 .p126-app .p126-head {gap:4px;flex-wrap:wrap;padding-inline:8px;}
 .p126-app .p126-heading {min-width:92px;flex:1 1 100px;}
-.p126-app .p126-heading h1 {font-size:18px;line-height:1.3;overflow-wrap:anywhere;}
+.p126-app .p126-heading h1 {font-size:27px;line-height:1.3;overflow-wrap:anywhere;}
 .p126-app .p126-kicker {display:none;}
 .p126-person-tools {display:flex;align-items:center;gap:0;flex:none;min-width:0;margin-inline-start:auto;}
-.p126-compact-room {font-size:12px;line-height:1.25;color:#626a73;white-space:nowrap;font-variant-numeric:tabular-nums;margin-right:3px;max-width:90px;overflow:hidden;text-overflow:ellipsis;}
+.p126-compact-room {font-size:18px;line-height:1.25;color:#626a73;white-space:nowrap;font-variant-numeric:tabular-nums;margin-right:3px;max-width:90px;overflow:hidden;text-overflow:ellipsis;}
 .p126-app[data-theme="dark"] .p126-compact-room {color:#a1a1aa;}
 .p126-app .p126-tools {flex-wrap:wrap;}
 .p126-app .p126-overlay[hidden] {display:none;}
 .p126-app .p126-overlay {position:fixed;inset:0;z-index:25;background:#080f2273;display:flex;align-items:flex-end;justify-content:center;padding:0;}
 .p126-app .p126-sheet {width:min(100%,640px);max-height:90dvh;max-height:min(90dvh,1000px);overflow:auto;background:var(--p126-bg);color:var(--p126-ink);border:1px solid var(--p126-line);border-radius:18px 18px 0 0;padding:12px 14px max(18px,env(safe-area-inset-bottom));box-shadow:0 12px 48px #0005;overscroll-behavior:contain;}
 .p126-drawer-head {display:flex;gap:8px;align-items:center;position:sticky;top:-12px;z-index:3;background:var(--p126-bg);padding:5px 0 10px;}
-.p126-drawer-head h2 {font-size:21px;line-height:1.35;flex:1;min-width:0;overflow-wrap:anywhere;}
+.p126-drawer-head h2 {font-size:31.5px;line-height:1.35;flex:1;min-width:0;overflow-wrap:anywhere;}
 .p126-drawer-main {min-width:0;}
 .p126-drawer-main .p126-viewport {height:min(48dvh,620px);min-height:160px;}
 .p126-app .p126-playlist-tools {display:flex;gap:8px;align-items:flex-end;flex-wrap:wrap;}
 .p126-playlist-tools .p126-field {flex:1 1 145px;min-width:0;}
 .p126-app .p126-playlist-tools select {width:100%;min-width:0;}
-.p126-app .p126-song-sub {display:flex;align-items:baseline;gap:6px;white-space:nowrap;line-height:1.35;font-size:16px;overflow:visible;}
+.p126-app .p126-song-sub {display:flex;align-items:baseline;gap:6px;white-space:nowrap;line-height:1.35;font-size:24px;overflow:visible;}
 .p126-app .p126-sub-artist {flex:1 1 auto;min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
 .p126-app .p126-song-code {flex:0 0 auto;min-width:0;max-width:100%;white-space:nowrap;font-variant-numeric:tabular-nums;}
-.p126-app .p126-song-title {font-size:21px;line-height:1.25;}
+.p126-app .p126-song-title {font-size:31.5px;line-height:1.25;}
 .p126-app .p126-title-button {min-width:0;}
 .p126-app .p126-danger {color:#d0475c;border-color:currentColor;}
 .p126-app[data-theme="dark"] .p126-danger {color:#ffb5b5;}
@@ -215,14 +215,60 @@ html[data-theme="light"] #phtoolsLifecycleNotice { --card:#f3f5f9; --text:#18223
 .p126-app .p126-pick {align-items:center;min-height:66px;}
 .p126-pick input {width:22px;height:22px;flex:none;}
 .p126-pick span {min-width:0;flex:1;}
-.p126-pick strong {display:block;font-size:20px;line-height:1.35;overflow-wrap:anywhere;}
-.p126-pick small {display:block;color:var(--p126-sub);font-size:13px;line-height:1.45;overflow-wrap:anywhere;}
+.p126-pick strong {display:block;font-size:30px;line-height:1.35;overflow-wrap:anywhere;}
+.p126-pick small {display:block;color:var(--p126-sub);font-size:19.5px;line-height:1.45;overflow-wrap:anywhere;}
 .p126-group-editor,.p126-record {border-bottom:1px solid var(--p126-line);padding-block:12px;}
 .p126-record small {color:var(--p126-sub);display:block;line-height:1.5;}
 .p126-app input[type="datetime-local"],.p126-app input[type="month"],.p126-app input[type="number"] {min-width:0;max-width:100%;min-height:44px;padding:8px;border:1px solid var(--p126-line);border-radius:8px;background:var(--p126-surface);color:var(--p126-ink);}
 @media(min-width:780px){.p126-app .p126-overlay {align-items:center;padding:20px;}.p126-app .p126-sheet {border-radius:16px;max-height:88dvh;}}
-@media(max-width:360px){.p126-app .p126-heading {flex-basis:80px;min-width:75px;}.p126-app .p126-heading h1 {font-size:16px;}.p126-compact-room {max-width:80px;}}
+@media(max-width:360px){.p126-app .p126-heading {flex-basis:80px;min-width:75px;}.p126-app .p126-heading h1 {font-size:24px;}.p126-compact-room {max-width:80px;}}
 
+
+/* GitHub150: familiar title/subtitle regions, unchanged icon order/actions. */
+.p126-app {--p126-row-min:120px;--p126-editor-row-min:190px;}
+.p126-app .p126-song {padding-block:3px;}
+.p126-app .p126-song-title {line-height:1.18;}
+.p126-app .p126-song-sub {flex-wrap:wrap;gap:1px 8px;line-height:1.2;}
+.p126-app .p126-sub-artist {flex:1 1 8em;line-height:1.2;}
+.p126-app .p126-song-code {flex:0 0 auto;max-width:100%;white-space:normal;overflow-wrap:anywhere;line-height:1.2;}
+.p126-app .p126-song-members {line-height:1.15;margin-top:2px;}
+.p126-app .p126-playlist-row {padding-block:7px;row-gap:7px;}
+.p126-app .p126-heading {flex:1 1 130px;min-width:100px;}
+.p126-app .p126-person-tools {max-width:100%;}
+.p126-app .p126-compact-room {max-width:140px;}
+.p126-app .p126-sheet {width:min(100%,780px);}
+.p126-app .p126-drawer-head {align-items:flex-start;}
+.p126-app .p126-drawer-head > button {margin-top:1px;}
+.p126-app .p126-drawer-head h2 {line-height:1.25;}
+.p126-app .p126-form {max-width:760px;}
+.p126-app input[type="text"],.p126-app select,.p126-app input[type="datetime-local"],.p126-app input[type="month"],.p126-app input[type="number"] {min-height:58px;}
+.p126-app .p126-detail dl {grid-template-columns:minmax(3.1em,max-content) minmax(0,1fr);gap:10px 12px;}
+.p126-app .p126-detail dd,.p126-app .p126-detail dt {overflow-wrap:anywhere;}
+.p126-app .p126-choice {align-items:flex-start;}
+.p126-app .p126-choice > input {margin-top:5px;}
+.p126-app .p126-pick {align-items:flex-start;}
+.p126-app .p126-pick strong {line-height:1.25;}
+.p126-app .p126-pick small {line-height:1.35;}
+.p126-app > details {margin:10px 14px 14px;padding-top:12px;border-top:1px solid var(--p126-line);overflow-wrap:anywhere;}
+.p126-app > details > label {display:grid;gap:8px;min-width:0;margin-block:12px;}
+.p126-app input[type="file"] {display:block;width:100%;min-width:0;max-width:100%;font:inherit;}
+.p126-app input[type="file"]::file-selector-button {font:inherit;max-width:100%;white-space:normal;}
+.p126-appearance {max-width:640px;}
+.p126-appearance input {flex:none;}
+@media(max-width:600px){
+ .p126-app {--p126-row-min:160px;--p126-editor-row-min:240px;}
+ .p126-app .p126-heading {flex-basis:135px;}
+ .p126-app .p126-person-tools {margin-inline-start:auto;}
+ .p126-app .p126-sheet {padding-inline:12px;}
+ .p126-app .p126-playlist-tools .p126-field {flex-basis:100%;}
+ .p126-app .p126-detail dl {grid-template-columns:1fr;gap:4px;}
+ .p126-app .p126-detail dd {margin-bottom:10px;}
+ .p126-app .p126-drawer-main .p126-form {padding-inline:2px;}
+ .p126-app .p126-playlist-tools,.p126-app .p126-drawer-main .p126-tools {padding-inline:2px;}
+ .p126-app .p126-drawer-main .p126-viewport {margin-inline:2px;}
+ .p126-app .p126-drawer-main .p126-actions {padding-inline:2px;}
+ .p126-app .p126-field-label {overflow-wrap:anywhere;}
+}
 </style></head><body><div class="wrap"><div id="p126BridgeNotice" role="status" hidden></div><div id="personalSongbook"></div></div><script id="p126-song-catalog">// songs.js
 // 資料檔（只放資料，不寫任何邏輯）
 // 每筆都要有 len（字數）
@@ -59676,6 +59722,46 @@ window.SONGS = [
 </script><script>
 "use strict";
 const PHTOOLS_CATALOG_SHA="5085ba5afc32e304ccc434f6b94cfc12f01a38e8fd033dd05746a7deb46a981a";
+/* Public people-only snapshot codec. Never contains or reads a local/private database. */
+(() => {
+  "use strict";
+  const UUID=/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/,SHA=/^[0-9a-f]{64}$/;
+  const MAX_BYTES=16*1024*1024, clone=value=>JSON.parse(JSON.stringify(value));
+  const error=code=>Object.assign(new Error(code),{code,status:400});
+  const need=(ok,code="publication_invalid")=>{if(!ok)throw error(code);};
+  function shape(value,keys){need(value&&typeof value==="object"&&!Array.isArray(value)&&Object.keys(value).sort().join(",")===[...keys].sort().join(","));}
+  function label(value,source=false){need(typeof value==="string"&&Array.from(value).length>0&&Array.from(value).length<=(source?256:80)&&!/\x00|[\x01-\x1f\x7f-\x9f\ud800-\udfff]/u.test(value));need(source||value===value.normalize("NFC").trim());}
+  function canonical(value){if(Array.isArray(value))return "["+value.map(canonical).join(",")+"]";if(value&&typeof value==="object")return "{"+Object.keys(value).sort().map(key=>JSON.stringify(key)+":"+canonical(value[key])).join(",")+"}";need(value===null||typeof value==="string"||typeof value==="boolean"||Number.isFinite(value));return JSON.stringify(value);}
+  async function prepare(value,{songs,catalogSha256,nonSongOrdinals=[],crypto:crypt=globalThis.crypto}={}){
+    shape(value,["schema_version","catalog_sha256","people","groups","group_members"]);
+    need(value.schema_version===1&&SHA.test(catalogSha256||"")&&value.catalog_sha256===catalogSha256,"publication_catalog_mismatch");
+    need(Array.isArray(songs)&&songs.length>0&&Array.isArray(value.people)&&value.people.length<=1024&&Array.isArray(value.groups)&&value.groups.length<=256&&Array.isArray(value.group_members)&&value.group_members.length<=65536);
+    const allIDs=new Set(),groupIDs=new Set(),personIDs=new Set(),personNames=new Set(),groupNames=new Set(),nonSongs=new Set(nonSongOrdinals),ordinals=new Set();let entries=0;
+    const unique=id=>{need(typeof id==="string"&&UUID.test(id)&&!allIDs.has(id));allIDs.add(id);};
+    for(const group of value.groups){shape(group,["id","name"]);unique(group.id);label(group.name);need(!groupNames.has(group.name));groupNames.add(group.name);groupIDs.add(group.id);}
+    for(const person of value.people){shape(person,["id","name","kind","entries"]);unique(person.id);need(["person","source_label"].includes(person.kind));label(person.name,person.kind==="source_label");need(!personNames.has(person.name)&&Array.isArray(person.entries)&&person.entries.length<=10000);personNames.add(person.name);personIDs.add(person.id);const seen=new Set();
+      for(const entry of person.entries){shape(entry,["id","ordinal"]);unique(entry.id);need(Number.isSafeInteger(entry.ordinal)&&entry.ordinal>=0&&entry.ordinal<songs.length&&!seen.has(entry.ordinal)&&!nonSongs.has(entry.ordinal),"publication_song_invalid");seen.add(entry.ordinal);ordinals.add(entry.ordinal);entries++;}
+    }
+    need(entries<=1000000);const memberships=new Map(),edges=new Set();
+    for(const member of value.group_members){shape(member,["group_id","person_id"]);need(groupIDs.has(member.group_id)&&personIDs.has(member.person_id));const edge=member.group_id+":"+member.person_id;need(!edges.has(edge));edges.add(edge);if(!memberships.has(member.person_id))memberships.set(member.person_id,new Set());memberships.get(member.person_id).add(member.group_id);}
+    const payload=clone(value),bytes=new TextEncoder().encode(canonical(payload));need(bytes.byteLength<=MAX_BYTES,"publication_too_large");need(crypt?.subtle,"publication_crypto_unavailable");
+    const digest=[...new Uint8Array(await crypt.subtle.digest("SHA-256",bytes))].map(x=>x.toString(16).padStart(2,"0")).join("");
+    const groups=clone(value.groups),people=value.people.map(person=>({...clone(person),group_ids:groups.filter(group=>memberships.get(person.id)?.has(group.id)).map(group=>group.id)}));
+    return {payload,digest,people,groups,ordinals:[...ordinals],entry_count:entries};
+  }
+  async function load({baseURL=globalThis.document?.baseURI,fetch:fetcher=globalThis.fetch,signal}={}){
+    const base=new URL(baseURL),url=new URL("./people-playlists.json",base);
+    need(["https:","http:"].includes(url.protocol)&&url.origin===base.origin&&!url.username&&!url.password&&!url.search&&!url.hash,"publication_location_invalid");
+    need(typeof fetcher==="function","publication_unavailable");
+    const response=await fetcher(url.href,{cache:"no-store",credentials:"omit",redirect:"error",signal});
+    need(response.ok&&/^(?:application\/json)(?:\s*;|$)/i.test(response.headers.get("content-type")||""),"publication_unavailable");
+    const length=response.headers.get("content-length");if(length!==null)need(/^\d+$/.test(length)&&Number(length)<=MAX_BYTES,"publication_too_large");
+    const text=await response.text();need(new TextEncoder().encode(text).byteLength<=MAX_BYTES,"publication_too_large");
+    try{return JSON.parse(text);}catch{throw error("publication_invalid");}
+  }
+  globalThis.P126PublishedPeople=Object.freeze({prepare,load,maxBytes:MAX_BYTES});
+})();
+
 /* Candidate browser-only personal library. Fixed song catalog never enters IndexedDB. */
 (() => {
   "use strict";
@@ -59683,7 +59769,7 @@ const PHTOOLS_CATALOG_SHA="5085ba5afc32e304ccc434f6b94cfc12f01a38e8fd033dd05746a
   const FIELDS = ["who", "id", "title", "artist", "lang", "page", "len", "book"];
   const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/;
   const SHA = /^[0-9a-f]{64}$/;
-  const COMMANDS = new Set(["create_person","rename_person","delete_person","reorder_people","add_song","reorder_entries","remove_entry","create_group","rename_group","delete_group","reorder_groups","set_person_groups","set_room_settings","open_visit","update_visit","close_visit","void_visit"]);
+  const COMMANDS = new Set(["apply_published_people","create_person","rename_person","delete_person","reorder_people","add_song","reorder_entries","remove_entry","create_group","rename_group","delete_group","reorder_groups","set_person_groups","set_room_settings","open_visit","update_visit","close_visit","void_visit"]);
   const DEFAULT_PREFS = Object.freeze({theme:"dark", shown:{lang:true,len:true,who:true,page:true,book:true}});
   const clone = value => JSON.parse(JSON.stringify(value));
   const error = code => Object.assign(new Error(code), {code, status:code.startsWith("conflict_") || code.includes("identity") ? 409 : code.startsWith("unknown_") ? 404 : code.startsWith("storage_") ? 503 : 400});
@@ -59725,7 +59811,7 @@ const PHTOOLS_CATALOG_SHA="5085ba5afc32e304ccc434f6b94cfc12f01a38e8fd033dd05746a
     need(["dark","light"].includes(value.theme) && Object.values(value.shown).every(x=>typeof x==="boolean"), "invalid_preferences"); return value;
   }
   async function create(options) {
-    const {songs, catalogSha256, nonSongOrdinals=[], initialPreferences=DEFAULT_PREFS, indexedDB:factory=globalThis.indexedDB, crypto:crypt=globalThis.crypto, clock=()=>Date.now()} = options || {};
+    const {songs, catalogSha256, nonSongOrdinals=[], initialPreferences=DEFAULT_PREFS, initialPublication=null, requireInitialPublication=false, indexedDB:factory=globalThis.indexedDB, crypto:crypt=globalThis.crypto, clock=()=>Date.now()} = options || {};
     need(factory && crypt?.subtle && typeof crypt.randomUUID === "function", "storage_unavailable");
     need(Array.isArray(songs) && songs.length > 0 && songs.length <= 100000 && SHA.test(catalogSha256), "invalid_catalog");
     const source = songs.map((song,ordinal) => {
@@ -59744,18 +59830,26 @@ const PHTOOLS_CATALOG_SHA="5085ba5afc32e304ccc434f6b94cfc12f01a38e8fd033dd05746a
       }
       return digests.get(ordinal);
     }
-    // Build only original who memberships; never persist the fixed catalog rows.
+    async function preparePublication(value) {
+      need(globalThis.P126PublishedPeople,"publication_codec_unavailable");
+      const prepared=await globalThis.P126PublishedPeople.prepare(value,{songs:source,catalogSha256,nonSongOrdinals:[...nonSongs],crypto:crypt});
+      prepared.song_refs={};for(const ordinal of prepared.ordinals)prepared.song_refs[ordinal]=await rowDigest(ordinal);
+      return prepared;
+    }
+    const published=initialPublication===null?null:await preparePublication(initialPublication);
+    // New published seed is used only by the first upgrade transaction; existing libraries are untouched.
     const seed = {application_id:APP,schema_version:2,catalog_sha256:catalogSha256,library_id:newID(),revision:1,seed_complete:true,
       people:[],groups:[],room_settings:{average_song_seconds:270,points_per_open_milli:0},singing_visits:[],song_refs:{},
       preferences:{revision:0,value:clone(prefs(initialPreferences))},receipts:{},preference_receipts:{},audit:[]};
     const seeded = new Map();
-    for (let ordinal=0;ordinal<source.length;ordinal++) {
+    if(!published&&!requireInitialPublication) for (let ordinal=0;ordinal<source.length;ordinal++) {
       const label=source[ordinal].who;
       if (!label || nonSongs.has(ordinal)) continue;
       name(label,true);
       if (!seeded.has(label)) {const p={id:newID(),name:label,kind:"source_label",entries:[],group_ids:[]};seeded.set(label,p);seed.people.push(p);}
       seeded.get(label).entries.push({id:newID(),ordinal}); seed.song_refs[ordinal]=await rowDigest(ordinal);
     }
+    if(published){seed.people=clone(published.people);seed.groups=clone(published.groups);seed.song_refs=clone(published.song_refs);}
     function validate(doc) {
       shape(doc,["application_id","schema_version","catalog_sha256","library_id","revision","seed_complete","people","groups","room_settings","singing_visits","song_refs","preferences","receipts","preference_receipts","audit"],"storage_schema_mismatch");
       need(doc.application_id===APP && doc.schema_version===2 && doc.catalog_sha256===catalogSha256 && doc.seed_complete===true && UUID.test(doc.library_id),"storage_identity_mismatch");
@@ -59792,7 +59886,7 @@ const PHTOOLS_CATALOG_SHA="5085ba5afc32e304ccc434f6b94cfc12f01a38e8fd033dd05746a
     validate(seed);
     const db = await new Promise((resolve,reject)=>{
       const req=factory.open(DB,VERSION);let failure=null;
-      req.onupgradeneeded=event=>{try{need(event.oldVersion===0,"storage_schema_mismatch");need(req.result.objectStoreNames.length===0,"storage_schema_mismatch");req.result.createObjectStore("state").put(seed,"library");}catch(e){failure=e;req.transaction.abort();}};
+      req.onupgradeneeded=event=>{try{need(event.oldVersion===0,"storage_schema_mismatch");need(req.result.objectStoreNames.length===0,"storage_schema_mismatch");need(!requireInitialPublication||published!==null,"publication_unavailable");req.result.createObjectStore("state").put(seed,"library");}catch(e){failure=e;req.transaction.abort();}};
       req.onerror=()=>reject(failure||error("storage_open_failed"));req.onblocked=()=>{failure=error("storage_upgrade_blocked");reject(failure);};
       req.onsuccess=()=>{const value=req.result;if(failure){value.close();reject(failure);return;}try{need(value.version===VERSION && value.objectStoreNames.length===1 && value.objectStoreNames.contains("state"),"storage_schema_mismatch");resolve(value);}catch(e){value.close();reject(e);}};
     });
@@ -59817,7 +59911,8 @@ const PHTOOLS_CATALOG_SHA="5085ba5afc32e304ccc434f6b94cfc12f01a38e8fd033dd05746a
     function reordered(present,wanted,key="id") {ids(wanted);need(present.length===wanted.length && present.every(item=>wanted.includes(item[key])),"invalid_order");const map=new Map(present.map(item=>[item[key],item]));return wanted.map(id=>map.get(id));}
     function command(doc,c,rowExpected) {
       need(c && typeof c.type==="string","invalid_command");let target=null;
-      if(c.type==="create_person"){shape(c,["type","name"]);const n=name(c.name);need(!doc.people.some(p=>p.name===n),"conflict_name");need(doc.people.length<1024,"people_limit");target=newID();doc.people.push({id:target,name:n,kind:"person",entries:[],group_ids:[]});}
+      if(c.type==="apply_published_people"){shape(c,["type","publication"]);need(rowExpected&&rowExpected.payload,"publication_invalid");doc.people=clone(rowExpected.people);doc.groups=clone(rowExpected.groups);Object.assign(doc.song_refs,rowExpected.song_refs);}
+      else if(c.type==="create_person"){shape(c,["type","name"]);const n=name(c.name);need(!doc.people.some(p=>p.name===n),"conflict_name");need(doc.people.length<1024,"people_limit");target=newID();doc.people.push({id:target,name:n,kind:"person",entries:[],group_ids:[]});}
       else if(c.type==="rename_person"){shape(c,["type","person_id","name"]);const p=person(doc,c.person_id),n=name(c.name);need(!doc.people.some(x=>x.id!==p.id&&x.name===n),"conflict_name");p.name=n;target=p.id;}
       else if(c.type==="delete_person"){shape(c,["type","person_id"]);const p=person(doc,c.person_id);target=p.id;doc.people=doc.people.filter(x=>x.id!==target);}
       else if(c.type==="reorder_people"){shape(c,["type","person_ids"]);doc.people=reordered(doc.people,c.person_ids);}
@@ -59851,7 +59946,7 @@ const PHTOOLS_CATALOG_SHA="5085ba5afc32e304ccc434f6b94cfc12f01a38e8fd033dd05746a
       async mutate(envelope,scope){
         shape(envelope,["library_id","catalog_sha256","expected_revision","operation_id","command"]);shape(scope,["tab_id","draft_id"]);uuid(scope.tab_id);uuid(scope.draft_id);uuid(envelope.operation_id);integer(envelope.expected_revision,1,Number.MAX_SAFE_INTEGER);
         need(envelope.library_id===knownLibrary && envelope.catalog_sha256===catalogSha256,"identity_mismatch");const wire=clone(envelope),bound=clone(scope),request=canonical(wire);
-        const expected=wire.command?.type==="add_song"?await rowDigest(wire.command.ordinal):null;
+        const expected=wire.command?.type==="add_song"?await rowDigest(wire.command.ordinal):wire.command?.type==="apply_published_people"?await preparePublication(wire.command.publication):null;
         return transaction(true,doc=>{const previous=doc.receipts[wire.operation_id];if(previous){need(previous.request===request && canonical(previous.scope)===canonical(bound),"conflict_operation");return {ok:true,mutation_revision:previous.mutation_revision,snapshot:snapshot(doc),command_result:clone(previous.command_result)};}
           need(doc.revision===wire.expected_revision,"conflict_revision");const result=command(doc,wire.command,expected);integer(doc.revision+1,2,Number.MAX_SAFE_INTEGER);const before=doc.revision++;const at=now();doc.receipts[wire.operation_id]={request,scope:bound,mutation_revision:doc.revision,command_result:result,at_utc:at};doc.audit.push({id:newID(),at_utc:at,action:result.type,target_id:result.target_id,before_revision:before,after_revision:doc.revision,operation_id:wire.operation_id});return {ok:true,mutation_revision:doc.revision,snapshot:snapshot(doc),command_result:result};});
       },
@@ -59942,7 +60037,7 @@ const P126_CONTROL_PATHS = Object.freeze({
 });
 const P126_ACTION_ICONS = Object.freeze({
   appearance:"settings",back:"back",draw:"draw",filter:"filter",playlist:"people",
-  "retry-library":"reset","retry-init":"reset","cancel-edit":"cancel","save-edit":"save",
+  "load-published-people":"reset","retry-library":"reset","retry-init":"reset","cancel-edit":"cancel","save-edit":"save",
   "reset-filter":"reset",people:"people","person-up":"up","person-down":"down",
   "person-playlist":"playlist","edit-playlist":"edit","copy-playlists":"copy",search:"search",
   "copy-back":"back","copy-saved-playlists":"copy","do-draw":"draw","copy-draw-one":"copy",
@@ -60237,7 +60332,7 @@ function createPersonalSongbook(adapter) {
           button("person-playlist", "開歌單", 'data-person="' + escape(id) + '"') + '</div></section>';
       }).join("") + field("新增人物", '<input type="text" data-field="new-person" value="' + escape(edit.newName) + '" placeholder="輸入新人物名稱" autocomplete="off">') +
       '<p class="p126-note">完成後按儲存變更；取消只捨棄這次尚未保存的變更。</p></form>' + editorActions() +
-      '<div class="p126-tools">' + button("appearance", "外觀設定") + '</div>';
+      '<div class="p126-tools">' + button("appearance", "外觀設定") + (typeof adapter.preparePublishedPeople==="function"?button("load-published-people","載入已發布歌單"):"") + '</div>';
   }
   function playlistEntries() {
     const person = state.people.get(state.selectedPerson);
@@ -60595,8 +60690,10 @@ function createPersonalSongbook(adapter) {
     if (!viewport || !rows || state.composing) return;
     const kind = viewport.dataset.list, editing = kind === "playlist" && state.edit?.mode === "playlist";
     const values = kind === "playlist" ? playlistEntries() : state.results;
-    const fontSize = parseFloat(getComputedStyle(root).fontSize) || 18;
-    const height = editing ? Math.ceil(fontSize * 2.9 + 108) : Math.max(84, Math.ceil(fontSize * 2.65 + 36));
+    const rowStyle = getComputedStyle(root);
+    const fontSize = parseFloat(rowStyle.fontSize) || 18;
+    const rowMinimum = parseFloat(rowStyle.getPropertyValue(editing ? "--p126-editor-row-min" : "--p126-row-min")) || 0;
+    const height = Math.max(rowMinimum, editing ? Math.ceil(fontSize * 2.9 + 108) : Math.max(84, Math.ceil(fontSize * 2.65 + 36)));
     const first = Math.max(0, Math.floor(viewport.scrollTop / height) - 3);
     const last = Math.min(values.length, first + Math.ceil(viewport.clientHeight / height) + 7);
     const token = focusToken();
@@ -60919,6 +61016,15 @@ function createPersonalSongbook(adapter) {
     if (action === "cancel-edit") { await cancelEdit(); return; }
     if (state.pendingCommand) return;
 
+    if (action === "load-published-people") {
+      if(state.edit?.mode!=="people"||typeof adapter.preparePublishedPeople!=="function")return;
+      if(state.edit.newName!==""||!equal(state.edit.order,state.edit.baseOrder)||[...state.edit.names].some(([id,name])=>name!==state.edit.baseNames.get(id))){notice("請先儲存或取消人物設定的變更，再載入已發布歌單。",true);return;}
+      const pending=(async()=>{try{return await adapter.preparePublishedPeople();}catch{notice("公開歌單無法載入或未通過檢查，原資料與畫面保留。",true);return null;}finally{state.opening=null;}})();
+      state.opening=pending;render();const publication=await pending;
+      if(!publication){render();return;}
+      state.edit={mode:"command",command:{type:"apply_published_people",publication},returnTo:"playlist"};state.screen="command";
+      await finishSettings();return;
+    }
     if (action === "appearance") { await appearance(); return; }
     if (action === "open-room" || action === "room-settings") {
       if(state.edit && !await finishSettings())return;
@@ -61292,10 +61398,19 @@ async function createGithubPeopleBridge(engine, initialPreferences) {
     appearance.addEventListener("keydown",event=>{if(event.key==="Escape"){event.preventDefault();void cancelAppearance();}if(event.key==="Tab"){const nodes=[...appearance.querySelectorAll("button,input")].filter(node=>!node.disabled);if(nodes.length&&((event.shiftKey&&document.activeElement===nodes[0])||(!event.shiftKey&&document.activeElement===nodes[nodes.length-1]))){event.preventDefault();nodes[event.shiftKey?nodes.length-1:0].focus();}}});
     appearance.append(title,form,save,cancel);document.querySelector(".wrap").append(appearance);const root=document.getElementById("personalSongbook");if(root)root.inert=true;appearance._values=values;save.focus({preventScroll:true});
   }
+  async function preparePublishedPeople(){
+    if(!guard||mutation||appearance||preferencePending)throw failure("editing_not_ready");
+    const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),15000);
+    try{
+      const value=await P126PublishedPeople.load({signal:controller.signal});
+      const prepared=await P126PublishedPeople.prepare(value,{songs:window.SONGS,catalogSha256:PHTOOLS_CATALOG_SHA,nonSongOrdinals:P126_CATALOG_CORRECTIONS.non_song_records.map(row=>row.ordinal)});
+      return confirm("載入已發布的 "+prepared.people.length+" 位人物、"+prepared.entry_count+" 筆歌曲歸屬？\n這會取代此瀏覽器的人物、分組及歌單（包含你在此刪除或修改的內容）；包廂紀錄、點數設定與外觀會保留。")?prepared.payload:null;
+    }finally{clearTimeout(timer);}
+  }
   const isClean=()=>!guard&&!opening&&!mutation&&!mutationFlight&&!changeFlight&&!discardFlight&&!appearance&&!appearanceFlight&&!preferencePending&&(!ui||ui.isClean());
   function finishSettings(){if(finishFlight)return finishFlight;finishFlight=(async()=>{if(ui&&!await ui.finishSettings())return false;if(appearance&&!await finishPreferences(appearance._values()))return false;if(opening)await opening;if((guard||mutation)&&!await discardEdit())return false;return isClean();})().finally(()=>finishFlight=null);return finishFlight;}
   async function refreshLibrary(){if(!isClean())return false;const latest=await engine.readPreferences();applyPreferences(latest.value);return !ui||await ui.refreshLibrary()===true;}
-  return Object.freeze({readLibrary,beginEdit,discardEdit,changeLibrary,finishPreferences,openAppearance,isClean,finishSettings,refreshLibrary,
+  return Object.freeze({preparePublishedPeople,readLibrary,beginEdit,discardEdit,changeLibrary,finishPreferences,openAppearance,isClean,finishSettings,refreshLibrary,
     acceptLibrary:value=>{library=clone(value);},acceptMutation:command=>{if(!mutation?.confirmed||mutation.commandKey!==JSON.stringify(command))throw failure("mutation_acceptance_mismatch");mutation=null;},
     bindUI:value=>{ui=value;applyPreferences(savedPreferences);}});
 }
@@ -61308,11 +61423,16 @@ async function bootGithubSongbook() {
     for(const song of rawSongs)Object.freeze(song);Object.freeze(rawSongs);
     const songs=rawSongs.map((song,ordinal)=>Object.freeze({...song,ordinal}));
     await createCatalogProjection(songs);
-    engine=await P126GithubStorage.create({songs:rawSongs,catalogSha256:PHTOOLS_CATALOG_SHA,nonSongOrdinals:P126_CATALOG_CORRECTIONS.non_song_records.map(row=>row.ordinal),initialPreferences:readGithubLegacyPreferences()});
+    let publication=null,publicationFailed=false;
+    const controller=new AbortController(),publicationTimer=setTimeout(()=>controller.abort(),15000);
+    try{const value=await P126PublishedPeople.load({signal:controller.signal});publication=(await P126PublishedPeople.prepare(value,{songs:rawSongs,catalogSha256:PHTOOLS_CATALOG_SHA,nonSongOrdinals:P126_CATALOG_CORRECTIONS.non_song_records.map(row=>row.ordinal)})).payload;}
+    catch{publicationFailed=true;}finally{clearTimeout(publicationTimer);}
+    engine=await P126GithubStorage.create({initialPublication:publication,requireInitialPublication:true,songs:rawSongs,catalogSha256:PHTOOLS_CATALOG_SHA,nonSongOrdinals:P126_CATALOG_CORRECTIONS.non_song_records.map(row=>row.ordinal),initialPreferences:readGithubLegacyPreferences()});
     const bridge=await createGithubPeopleBridge(engine,engine.initial.preferences.value);
-    const book=createPersonalSongbook({root,songs,initialPreferences:engine.initial.preferences.value,readLibrary:bridge.readLibrary,beginEdit:bridge.beginEdit,discardEdit:bridge.discardEdit,changeLibrary:bridge.changeLibrary,finishPreferences:bridge.finishPreferences,openAppearance:bridge.openAppearance,onLibraryAccepted:bridge.acceptLibrary,onMutationAccepted:bridge.acceptMutation,onNotice:()=>{}});
+    const book=createPersonalSongbook({root,songs,initialPreferences:engine.initial.preferences.value,preparePublishedPeople:bridge.preparePublishedPeople,readLibrary:bridge.readLibrary,beginEdit:bridge.beginEdit,discardEdit:bridge.discardEdit,changeLibrary:bridge.changeLibrary,finishPreferences:bridge.finishPreferences,openAppearance:bridge.openAppearance,onLibraryAccepted:bridge.acceptLibrary,onMutationAccepted:bridge.acceptMutation,onNotice:()=>{}});
     bridge.bindUI(book);await book.init();book.bind();
-    const footer=root.querySelector(".p126-foot");if(footer)footer.textContent="GitHub版：歌目是內嵌固定資源；人物與包廂只存此瀏覽器。時間取自此裝置，不會與主機或其他裝置自動同步。";
+    if(publicationFailed){const target=document.getElementById("p126BridgeNotice");if(target){target.textContent="公開歌單暫時無法讀取；此瀏覽器原有人物資料已保留。";target.hidden=false;}}
+    const footer=root.querySelector(".p126-foot");if(footer)footer.textContent="GitHub版：歌目是內嵌固定資源；人物與包廂只存此瀏覽器。初次使用載入已發布的人物歌單；之後不會自動覆蓋此瀏覽器修改。時間取自此裝置，不會與主機或其他裝置自動同步。";
     const backup=document.createElement("details"),summary=document.createElement("summary"),note=document.createElement("p"),exportButton=document.createElement("button"),fileLabel=document.createElement("label"),fileInput=document.createElement("input"),restoreButton=document.createElement("button"),message=document.createElement("p");
     summary.textContent="此瀏覽器的人物資料備份";note.textContent="匯出只包含人物歸屬、分組、唱歌紀錄與偏好，不含完整歌目。還原限同一資料庫的備份；不同裝置或已清除站點資料的身分不符時會拒絕。";
     p126SetControlButton(exportButton,"copy","下載此瀏覽器人物資料備份");p126SetControlButton(restoreButton,"reset","還原已選的同庫備份");fileLabel.textContent="選擇同庫備份 ";fileInput.type="file";fileInput.accept="application/json,.json";fileInput.setAttribute("aria-label","選擇同一人物資料庫的JSON備份");fileLabel.append(fileInput);message.setAttribute("role","status");
@@ -61325,7 +61445,7 @@ async function bootGithubSongbook() {
     document.addEventListener("visibilitychange",refresh);window.addEventListener("focus",refresh);window.addEventListener("pageshow",refresh);
   } catch(e) {
     engine?.close();
-    root.replaceChildren();const title=document.createElement("h2"),text=document.createElement("p");title.textContent="此瀏覽器的歌單暫時無法開啟";text.textContent="請確認此站可使用瀏覽器儲存空間與HTTPS。若資料格式或身分不符，請保留原資料與備份，再處理相容性；本頁不會自動清空資料或建立另一份歌單。";root.append(title,text);
+    root.replaceChildren();const title=document.createElement("h2"),text=document.createElement("p");title.textContent="此瀏覽器的歌單暫時無法開啟";text.textContent=(e?.code==="publication_unavailable"?"公開人物歌單尚未載入，請稍後重新整理。尚未建立空白人物庫。 ":"")+"請確認此站可使用瀏覽器儲存空間與HTTPS。若資料格式或身分不符，請保留原資料與備份，再處理相容性；本頁不會自動清空資料或建立另一份歌單。";root.append(title,text);
   }
 }
 

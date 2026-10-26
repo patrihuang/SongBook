@@ -185,22 +185,12 @@ html{font-size:27px;background:#10131b;color:#f2f4fa;font-family:"Microsoft Jhen
 #phtoolsLifecycleNotice { --card:#1b2130; --text:#f2f4fa; --line:#343f55; --radius:14px; }
 html[data-theme="light"] #phtoolsLifecycleNotice { --card:#f3f5f9; --text:#182235; --line:#d8dfeb; --radius:14px; }
 
-/* A: compact header and exactly one business drawer. */
-.p126-app .p126-head {gap:4px;flex-wrap:wrap;padding-inline:8px;}
-.p126-app .p126-heading {min-width:92px;flex:1 1 100px;}
-.p126-app .p126-heading h1 {font-size:27px;line-height:1.3;overflow-wrap:anywhere;}
-.p126-app .p126-kicker {display:none;}
-.p126-person-tools {display:flex;align-items:center;gap:0;flex:none;min-width:0;margin-inline-start:auto;}
-.p126-compact-room {font-size:18px;line-height:1.25;color:#626a73;white-space:nowrap;font-variant-numeric:tabular-nums;margin-right:3px;max-width:90px;overflow:hidden;text-overflow:ellipsis;}
+/* Preserve the mature Web page layout; extra features use added controls. */
+.p126-person-tools {display:flex;align-items:center;gap:3px;flex:none;min-width:0;margin-inline-start:auto;}
+.p126-compact-room {font-size:18px;line-height:1.25;color:#626a73;white-space:nowrap;font-variant-numeric:tabular-nums;max-width:90px;overflow:hidden;text-overflow:ellipsis;}
 .p126-app[data-theme="dark"] .p126-compact-room {color:#a1a1aa;}
-.p126-app .p126-tools {flex-wrap:wrap;}
-.p126-app .p126-overlay[hidden] {display:none;}
-.p126-app .p126-overlay {position:fixed;inset:0;z-index:25;background:#080f2273;display:flex;align-items:flex-end;justify-content:center;padding:0;}
-.p126-app .p126-sheet {width:min(100%,640px);max-height:90dvh;max-height:min(90dvh,1000px);overflow:auto;background:var(--p126-bg);color:var(--p126-ink);border:1px solid var(--p126-line);border-radius:18px 18px 0 0;padding:12px 14px max(18px,env(safe-area-inset-bottom));box-shadow:0 12px 48px #0005;overscroll-behavior:contain;}
-.p126-drawer-head {display:flex;gap:8px;align-items:center;position:sticky;top:-12px;z-index:3;background:var(--p126-bg);padding:5px 0 10px;}
-.p126-drawer-head h2 {font-size:31.5px;line-height:1.35;flex:1;min-width:0;overflow-wrap:anywhere;}
-.p126-drawer-main {min-width:0;}
-.p126-drawer-main .p126-viewport {height:min(48dvh,620px);min-height:160px;}
+.p126-group-tools .p126-field {flex:1 1 160px;min-width:0;}
+.p126-personal-scope {padding:6px 14px 10px;}
 .p126-app .p126-playlist-tools {display:flex;gap:8px;align-items:flex-end;flex-wrap:wrap;}
 .p126-playlist-tools .p126-field {flex:1 1 145px;min-width:0;}
 .p126-app .p126-playlist-tools select {width:100%;min-width:0;}
@@ -220,11 +210,9 @@ html[data-theme="light"] #phtoolsLifecycleNotice { --card:#f3f5f9; --text:#18223
 .p126-group-editor,.p126-record {border-bottom:1px solid var(--p126-line);padding-block:12px;}
 .p126-record small {color:var(--p126-sub);display:block;line-height:1.5;}
 .p126-app input[type="datetime-local"],.p126-app input[type="month"],.p126-app input[type="number"] {min-width:0;max-width:100%;min-height:44px;padding:8px;border:1px solid var(--p126-line);border-radius:8px;background:var(--p126-surface);color:var(--p126-ink);}
-@media(min-width:780px){.p126-app .p126-overlay {align-items:center;padding:20px;}.p126-app .p126-sheet {border-radius:16px;max-height:88dvh;}}
-@media(max-width:360px){.p126-app .p126-heading {flex-basis:80px;min-width:75px;}.p126-app .p126-heading h1 {font-size:24px;}.p126-compact-room {max-width:80px;}}
 
 
-/* GitHub150: familiar title/subtitle regions, unchanged icon order/actions. */
+/* Keep the mature page flow with the previously requested 150% type. */
 .p126-app {--p126-row-min:120px;--p126-editor-row-min:190px;}
 .p126-app .p126-song {padding-block:3px;}
 .p126-app .p126-song-title {line-height:1.18;}
@@ -233,13 +221,9 @@ html[data-theme="light"] #phtoolsLifecycleNotice { --card:#f3f5f9; --text:#18223
 .p126-app .p126-song-code {flex:0 0 auto;max-width:100%;white-space:normal;overflow-wrap:anywhere;line-height:1.2;}
 .p126-app .p126-song-members {line-height:1.15;margin-top:2px;}
 .p126-app .p126-playlist-row {padding-block:7px;row-gap:7px;}
-.p126-app .p126-heading {flex:1 1 130px;min-width:100px;}
+.p126-app .p126-heading {flex:1 1 100px;min-width:60px;}
 .p126-app .p126-person-tools {max-width:100%;}
 .p126-app .p126-compact-room {max-width:140px;}
-.p126-app .p126-sheet {width:min(100%,780px);}
-.p126-app .p126-drawer-head {align-items:flex-start;}
-.p126-app .p126-drawer-head > button {margin-top:1px;}
-.p126-app .p126-drawer-head h2 {line-height:1.25;}
 .p126-app .p126-form {max-width:760px;}
 .p126-app input[type="text"],.p126-app select,.p126-app input[type="datetime-local"],.p126-app input[type="month"],.p126-app input[type="number"] {min-height:58px;}
 .p126-app .p126-detail dl {grid-template-columns:minmax(3.1em,max-content) minmax(0,1fr);gap:10px 12px;}
@@ -249,26 +233,23 @@ html[data-theme="light"] #phtoolsLifecycleNotice { --card:#f3f5f9; --text:#18223
 .p126-app .p126-pick {align-items:flex-start;}
 .p126-app .p126-pick strong {line-height:1.25;}
 .p126-app .p126-pick small {line-height:1.35;}
-.p126-app > details {margin:10px 14px 14px;padding-top:12px;border-top:1px solid var(--p126-line);overflow-wrap:anywhere;}
-.p126-app > details > label {display:grid;gap:8px;min-width:0;margin-block:12px;}
+.p126-app details.p126-local-backup {margin:10px 14px 14px;padding-top:12px;border-top:1px solid var(--p126-line);overflow-wrap:anywhere;}
+.p126-app details.p126-local-backup > label {display:grid;gap:8px;min-width:0;margin-block:12px;}
 .p126-app input[type="file"] {display:block;width:100%;min-width:0;max-width:100%;font:inherit;}
 .p126-app input[type="file"]::file-selector-button {font:inherit;max-width:100%;white-space:normal;}
 .p126-appearance {max-width:640px;}
 .p126-appearance input {flex:none;}
 @media(max-width:600px){
  .p126-app {--p126-row-min:160px;--p126-editor-row-min:240px;}
- .p126-app .p126-heading {flex-basis:135px;}
- .p126-app .p126-person-tools {margin-inline-start:auto;}
- .p126-app .p126-sheet {padding-inline:12px;}
  .p126-app .p126-playlist-tools .p126-field {flex-basis:100%;}
  .p126-app .p126-detail dl {grid-template-columns:1fr;gap:4px;}
  .p126-app .p126-detail dd {margin-bottom:10px;}
- .p126-app .p126-drawer-main .p126-form {padding-inline:2px;}
- .p126-app .p126-playlist-tools,.p126-app .p126-drawer-main .p126-tools {padding-inline:2px;}
- .p126-app .p126-drawer-main .p126-viewport {margin-inline:2px;}
- .p126-app .p126-drawer-main .p126-actions {padding-inline:2px;}
  .p126-app .p126-field-label {overflow-wrap:anywhere;}
 }
+
+.p126-readonly-mark {display:inline-flex;align-items:center;justify-content:center;flex:none;min-width:44px;min-height:44px;font-size:15px;color:var(--p126-sub);}
+
+.p126-readonly .p126-song {grid-template-columns:minmax(0,1fr);}
 </style></head><body><div class="wrap"><div id="p126BridgeNotice" role="status" hidden></div><div id="personalSongbook"></div></div><script id="p126-song-catalog">// songs.js
 // 資料檔（只放資料，不寫任何邏輯）
 // 每筆都要有 len（字數）
@@ -59719,8 +59700,7 @@ window.SONGS = [
     "好歌已就位，輪到你表現了 🎤"
   ]
 }
-</script><script>
-"use strict";
+</script><script>"use strict";
 const PHTOOLS_CATALOG_SHA="5085ba5afc32e304ccc434f6b94cfc12f01a38e8fd033dd05746a7deb46a981a";
 /* Public people-only snapshot codec. Never contains or reads a local/private database. */
 (() => {
@@ -59760,205 +59740,6 @@ const PHTOOLS_CATALOG_SHA="5085ba5afc32e304ccc434f6b94cfc12f01a38e8fd033dd05746a
     try{return JSON.parse(text);}catch{throw error("publication_invalid");}
   }
   globalThis.P126PublishedPeople=Object.freeze({prepare,load,maxBytes:MAX_BYTES});
-})();
-
-/* Candidate browser-only personal library. Fixed song catalog never enters IndexedDB. */
-(() => {
-  "use strict";
-  const APP = "phoenix.songbook.github.personal", DB = "phoenix-songbook-github-personal", VERSION = 1;
-  const FIELDS = ["who", "id", "title", "artist", "lang", "page", "len", "book"];
-  const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/;
-  const SHA = /^[0-9a-f]{64}$/;
-  const COMMANDS = new Set(["apply_published_people","create_person","rename_person","delete_person","reorder_people","add_song","reorder_entries","remove_entry","create_group","rename_group","delete_group","reorder_groups","set_person_groups","set_room_settings","open_visit","update_visit","close_visit","void_visit"]);
-  const DEFAULT_PREFS = Object.freeze({theme:"dark", shown:{lang:true,len:true,who:true,page:true,book:true}});
-  const clone = value => JSON.parse(JSON.stringify(value));
-  const error = code => Object.assign(new Error(code), {code, status:code.startsWith("conflict_") || code.includes("identity") ? 409 : code.startsWith("unknown_") ? 404 : code.startsWith("storage_") ? 503 : 400});
-  function need(ok, code) { if (!ok) throw error(code); }
-  function shape(value, names, code="invalid_command") {
-    need(value && typeof value === "object" && !Array.isArray(value) && Object.keys(value).sort().join(",") === [...names].sort().join(","), code);
-  }
-  function integer(value, min, max, code="invalid_command") { need(Number.isSafeInteger(value) && value >= min && value <= max, code); return value; }
-  function name(value, source=false) {
-    need(typeof value === "string", "invalid_name");
-    if (!source) value = value.normalize("NFC").trim();
-    need(Array.from(value).length > 0 && Array.from(value).length <= (source ? 256 : 80) && !/[\x00-\x1f\x7f-\x9f\ud800-\udfff]/u.test(value), "invalid_name");
-    return value;
-  }
-  function uuid(value) { need(typeof value === "string" && UUID.test(value), "invalid_command"); return value; }
-  function ids(value, nonempty=false) {
-    need(Array.isArray(value) && value.length <= 100000 && (!nonempty || value.length) && new Set(value).size === value.length, "invalid_order");
-    value.forEach(uuid); return value;
-  }
-  function canonical(value) {
-    if (Array.isArray(value)) return "[" + value.map(canonical).join(",") + "]";
-    if (value && typeof value === "object") return "{" + Object.keys(value).sort().map(k => JSON.stringify(k) + ":" + canonical(value[k])).join(",") + "}";
-    need(value === null || typeof value === "string" || typeof value === "boolean" || (typeof value === "number" && Number.isFinite(value)), "invalid_command");
-    return JSON.stringify(value);
-  }
-  function utc(value) {
-    need(typeof value === "string", "invalid_time");
-    const m = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})(?:\.(\d{1,6}))?Z$/.exec(value);
-    need(m && Number(m[1]) >= 1970 && Number(m[1]) <= 9999, "invalid_time");
-    const whole = value.slice(0,19), fraction=(m[7] || "").padEnd(6,"0");
-    // Parse only the standard three-digit interchange form, including Safari.
-    const milliseconds = Date.parse(whole+"."+fraction.slice(0,3)+"Z");
-    need(Number.isFinite(milliseconds) && new Date(milliseconds).toISOString().slice(0,19) === whole, "invalid_time");
-    return whole + "." + fraction + "Z";
-  }
-  function localDate(value) {const canonical=utc(value);return new Date(Date.parse(canonical.slice(0,23)+"Z") + 8 * 3600000).toISOString().slice(0,10);}
-  function prefs(value) {
-    shape(value,["theme","shown"],"invalid_preferences"); shape(value.shown,["lang","len","who","page","book"],"invalid_preferences");
-    need(["dark","light"].includes(value.theme) && Object.values(value.shown).every(x=>typeof x==="boolean"), "invalid_preferences"); return value;
-  }
-  async function create(options) {
-    const {songs, catalogSha256, nonSongOrdinals=[], initialPreferences=DEFAULT_PREFS, initialPublication=null, requireInitialPublication=false, indexedDB:factory=globalThis.indexedDB, crypto:crypt=globalThis.crypto, clock=()=>Date.now()} = options || {};
-    need(factory && crypt?.subtle && typeof crypt.randomUUID === "function", "storage_unavailable");
-    need(Array.isArray(songs) && songs.length > 0 && songs.length <= 100000 && SHA.test(catalogSha256), "invalid_catalog");
-    const source = songs.map((song,ordinal) => {
-      need(song && FIELDS.every(key=>typeof song[key]==="string") && (song.ordinal===undefined || song.ordinal===ordinal), "invalid_catalog");
-      return Object.freeze(Object.fromEntries(FIELDS.map(key=>[key,song[key]])));
-    });
-    const nonSongs = new Set(nonSongOrdinals), digests = new Map();
-    for (const ordinal of nonSongs) integer(ordinal,0,source.length-1,"invalid_catalog");
-    const now = () => {const value=clock(); need(Number.isFinite(value),"invalid_clock"); return utc(new Date(value).toISOString());};
-    const newID = () => uuid(crypt.randomUUID());
-    async function rowDigest(ordinal) {
-      integer(ordinal,0,source.length-1,"catalog_row_mismatch");
-      if (!digests.has(ordinal)) {
-        const bytes = new TextEncoder().encode(JSON.stringify(FIELDS.map(key=>source[ordinal][key])));
-        digests.set(ordinal,[...new Uint8Array(await crypt.subtle.digest("SHA-256",bytes))].map(x=>x.toString(16).padStart(2,"0")).join(""));
-      }
-      return digests.get(ordinal);
-    }
-    async function preparePublication(value) {
-      need(globalThis.P126PublishedPeople,"publication_codec_unavailable");
-      const prepared=await globalThis.P126PublishedPeople.prepare(value,{songs:source,catalogSha256,nonSongOrdinals:[...nonSongs],crypto:crypt});
-      prepared.song_refs={};for(const ordinal of prepared.ordinals)prepared.song_refs[ordinal]=await rowDigest(ordinal);
-      return prepared;
-    }
-    const published=initialPublication===null?null:await preparePublication(initialPublication);
-    // New published seed is used only by the first upgrade transaction; existing libraries are untouched.
-    const seed = {application_id:APP,schema_version:2,catalog_sha256:catalogSha256,library_id:newID(),revision:1,seed_complete:true,
-      people:[],groups:[],room_settings:{average_song_seconds:270,points_per_open_milli:0},singing_visits:[],song_refs:{},
-      preferences:{revision:0,value:clone(prefs(initialPreferences))},receipts:{},preference_receipts:{},audit:[]};
-    const seeded = new Map();
-    if(!published&&!requireInitialPublication) for (let ordinal=0;ordinal<source.length;ordinal++) {
-      const label=source[ordinal].who;
-      if (!label || nonSongs.has(ordinal)) continue;
-      name(label,true);
-      if (!seeded.has(label)) {const p={id:newID(),name:label,kind:"source_label",entries:[],group_ids:[]};seeded.set(label,p);seed.people.push(p);}
-      seeded.get(label).entries.push({id:newID(),ordinal}); seed.song_refs[ordinal]=await rowDigest(ordinal);
-    }
-    if(published){seed.people=clone(published.people);seed.groups=clone(published.groups);seed.song_refs=clone(published.song_refs);}
-    function validate(doc) {
-      shape(doc,["application_id","schema_version","catalog_sha256","library_id","revision","seed_complete","people","groups","room_settings","singing_visits","song_refs","preferences","receipts","preference_receipts","audit"],"storage_schema_mismatch");
-      need(doc.application_id===APP && doc.schema_version===2 && doc.catalog_sha256===catalogSha256 && doc.seed_complete===true && UUID.test(doc.library_id),"storage_identity_mismatch");
-      integer(doc.revision,1,Number.MAX_SAFE_INTEGER,"storage_invalid");
-      need(Array.isArray(doc.people) && doc.people.length<=1024 && Array.isArray(doc.groups) && doc.groups.length<=256 && Array.isArray(doc.singing_visits) && doc.singing_visits.length<=100000,"storage_invalid");
-      const allIDs=new Set(), personNames=new Set(), groupNames=new Set(), groupIDs=new Set(), entryIDs=new Set(); let count=0,members=0;
-      const uniqueID=id=>{uuid(id);need(!allIDs.has(id),"storage_invalid");allIDs.add(id);};
-      for (const group of doc.groups) {shape(group,["id","name"],"storage_invalid");uniqueID(group.id);need(group.name===name(group.name) && !groupNames.has(group.name),"storage_invalid");groupNames.add(group.name);groupIDs.add(group.id);}
-      for (const p of doc.people) {
-        shape(p,["id","name","kind","entries","group_ids"],"storage_invalid");uniqueID(p.id);need(["person","source_label"].includes(p.kind),"storage_invalid");
-        need(p.name===name(p.name,p.kind==="source_label") && !personNames.has(p.name) && Array.isArray(p.entries) && p.entries.length<=10000,"storage_invalid");personNames.add(p.name);
-        ids(p.group_ids);need(p.group_ids.every(id=>groupIDs.has(id)) && JSON.stringify(p.group_ids)===JSON.stringify(doc.groups.filter(g=>p.group_ids.includes(g.id)).map(g=>g.id)),"storage_invalid");members+=p.group_ids.length;
-        const ordinals=new Set(); for (const entry of p.entries) {shape(entry,["id","ordinal"],"storage_invalid");uniqueID(entry.id);entryIDs.add(entry.id);integer(entry.ordinal,0,source.length-1,"storage_invalid");need(!ordinals.has(entry.ordinal) && !nonSongs.has(entry.ordinal) && SHA.test(doc.song_refs[entry.ordinal]||""),"storage_invalid");ordinals.add(entry.ordinal);count++;}
-      }
-      need(count<=1000000 && members<=65536,"storage_invalid");
-      need(doc.song_refs && typeof doc.song_refs==="object" && !Array.isArray(doc.song_refs),"storage_invalid");
-      for (const [ordinal,digest] of Object.entries(doc.song_refs)) {need(/^(0|[1-9]\d*)$/.test(ordinal) && Number(ordinal)<source.length && SHA.test(digest),"storage_invalid");if(digests.has(Number(ordinal)))need(digests.get(Number(ordinal))===digest,"catalog_row_mismatch");}
-      shape(doc.room_settings,["average_song_seconds","points_per_open_milli"],"storage_invalid");integer(doc.room_settings.average_song_seconds,1,86400,"storage_invalid");integer(doc.room_settings.points_per_open_milli,0,1000000000,"storage_invalid");
-      let opens=0;for(const visit of doc.singing_visits){shape(visit,["id","started_at_utc","planned_end_at_utc","local_start_date","timezone","average_song_seconds","points_milli","status","closed_at_utc"],"storage_invalid");uniqueID(visit.id);
-        need(utc(visit.started_at_utc)===visit.started_at_utc && utc(visit.planned_end_at_utc)===visit.planned_end_at_utc && visit.planned_end_at_utc>visit.started_at_utc && visit.local_start_date===localDate(visit.started_at_utc) && visit.timezone==="Asia/Taipei","storage_invalid");
-        integer(visit.average_song_seconds,1,86400,"storage_invalid");integer(visit.points_milli,0,1000000000,"storage_invalid");need(["open","closed","void"].includes(visit.status),"storage_invalid");
-        if(visit.status==="open"){opens++;need(visit.closed_at_utc===null,"storage_invalid");}else if(visit.closed_at_utc!==null)need(utc(visit.closed_at_utc)===visit.closed_at_utc && visit.closed_at_utc>=visit.started_at_utc,"storage_invalid");
-        if(visit.status==="closed")need(visit.closed_at_utc!==null,"storage_invalid");}
-      need(opens<=1,"storage_invalid");shape(doc.preferences,["revision","value"],"storage_invalid");integer(doc.preferences.revision,0,Number.MAX_SAFE_INTEGER,"storage_invalid");prefs(doc.preferences.value);
-      need(doc.receipts && typeof doc.receipts==="object" && !Array.isArray(doc.receipts) && doc.preference_receipts && typeof doc.preference_receipts==="object" && !Array.isArray(doc.preference_receipts) && Array.isArray(doc.audit),"storage_invalid");
-      const audited=new Map(), revisions=new Set();
-      for(const a of doc.audit){shape(a,["id","at_utc","action","target_id","before_revision","after_revision","operation_id"],"storage_invalid");uuid(a.id);need(utc(a.at_utc)===a.at_utc && (a.target_id===null||UUID.test(a.target_id)),"storage_invalid");integer(a.before_revision,1,doc.revision-1,"storage_invalid");need(a.after_revision===a.before_revision+1&&!revisions.has(a.after_revision),"storage_invalid");revisions.add(a.after_revision);if(a.operation_id===null)need(a.action==="restore_import"&&a.target_id===doc.library_id,"storage_invalid");else{uuid(a.operation_id);need(COMMANDS.has(a.action)&&!audited.has(a.operation_id),"storage_invalid");audited.set(a.operation_id,a);}}
-      need(doc.audit.length===doc.revision-1,"storage_invalid");
-      for(const [id,receipt] of Object.entries(doc.receipts)){uuid(id);shape(receipt,["request","scope","mutation_revision","command_result","at_utc"],"storage_invalid");need(typeof receipt.request==="string" && utc(receipt.at_utc)===receipt.at_utc,"storage_invalid");shape(receipt.scope,["tab_id","draft_id"],"storage_invalid");uuid(receipt.scope.tab_id);uuid(receipt.scope.draft_id);integer(receipt.mutation_revision,2,doc.revision,"storage_invalid");shape(receipt.command_result,["type","target_id"],"storage_invalid");need(COMMANDS.has(receipt.command_result.type) && (receipt.command_result.target_id===null || UUID.test(receipt.command_result.target_id)),"storage_invalid");const a=audited.get(id);need(a&&a.action===receipt.command_result.type&&a.target_id===receipt.command_result.target_id&&a.after_revision===receipt.mutation_revision&&a.at_utc===receipt.at_utc,"storage_invalid");const wire=JSON.parse(receipt.request);need(canonical(wire)===receipt.request&&wire.operation_id===id&&wire.library_id===doc.library_id&&wire.catalog_sha256===catalogSha256&&wire.command.type===a.action,"storage_invalid");}
-      need(audited.size===Object.keys(doc.receipts).length,"storage_invalid");
-      for(const [id,receipt] of Object.entries(doc.preference_receipts)){uuid(id);shape(receipt,["request","revision"],"storage_invalid");integer(receipt.revision,1,doc.preferences.revision,"storage_invalid");need(typeof receipt.request==="string","storage_invalid");const wire=JSON.parse(receipt.request);shape(wire,["value","expectedRevision"],"storage_invalid");prefs(wire.value);need(canonical(wire)===receipt.request&&wire.expectedRevision+1===receipt.revision,"storage_invalid");}
-      return doc;
-    }
-    validate(seed);
-    const db = await new Promise((resolve,reject)=>{
-      const req=factory.open(DB,VERSION);let failure=null;
-      req.onupgradeneeded=event=>{try{need(event.oldVersion===0,"storage_schema_mismatch");need(req.result.objectStoreNames.length===0,"storage_schema_mismatch");need(!requireInitialPublication||published!==null,"publication_unavailable");req.result.createObjectStore("state").put(seed,"library");}catch(e){failure=e;req.transaction.abort();}};
-      req.onerror=()=>reject(failure||error("storage_open_failed"));req.onblocked=()=>{failure=error("storage_upgrade_blocked");reject(failure);};
-      req.onsuccess=()=>{const value=req.result;if(failure){value.close();reject(failure);return;}try{need(value.version===VERSION && value.objectStoreNames.length===1 && value.objectStoreNames.contains("state"),"storage_schema_mismatch");resolve(value);}catch(e){value.close();reject(e);}};
-    });
-    let closed=false,invalidated=false,knownLibrary=null;
-    db.onversionchange=()=>{invalidated=true;closed=true;db.close();};
-    function transaction(write,callback) {
-      need(!closed && !invalidated,"storage_closed");
-      return new Promise((resolve,reject)=>{
-        let result,failure=null;const tx=db.transaction("state",write?"readwrite":"readonly"),store=tx.objectStore("state"),req=store.get("library");
-        req.onsuccess=()=>{try{const doc=validate(req.result);if(knownLibrary)need(doc.library_id===knownLibrary,"storage_identity_mismatch");result=callback(doc);if(write){validate(doc);store.put(doc,"library");}}catch(e){failure=e;tx.abort();}};
-        req.onerror=()=>{failure=error("storage_read_failed");};
-        tx.oncomplete=()=>resolve(clone(result));tx.onabort=()=>reject(failure||error("storage_transaction_aborted"));tx.onerror=()=>{if(!failure)failure=error("storage_transaction_failed");};
-      });
-    }
-    function snapshot(doc) {
-      const monthly={};for(const visit of doc.singing_visits)if(visit.status!=="void"){const month=visit.local_start_date.slice(0,7);monthly[month]=(monthly[month]||0)+visit.points_milli;need(Number.isSafeInteger(monthly[month]),"storage_invalid");}
-      return {library_id:doc.library_id,schema_version:2,catalog_sha256:catalogSha256,revision:doc.revision,people:clone(doc.people),groups:clone(doc.groups),room_settings:clone(doc.room_settings),singing_visits:clone(doc.singing_visits).sort((a,b)=>a.started_at_utc.localeCompare(b.started_at_utc)||a.id.localeCompare(b.id)),room_now_utc:now(),monthly_points_milli:Object.fromEntries(Object.entries(monthly).sort(([a],[b])=>a.localeCompare(b)))};
-    }
-    function person(doc,id) {uuid(id);const p=doc.people.find(p=>p.id===id);need(p,"unknown_person");return p;}
-    function group(doc,id) {uuid(id);const g=doc.groups.find(g=>g.id===id);need(g,"unknown_group");return g;}
-    function visit(doc,id) {uuid(id);const v=doc.singing_visits.find(v=>v.id===id);need(v,"unknown_visit");return v;}
-    function reordered(present,wanted,key="id") {ids(wanted);need(present.length===wanted.length && present.every(item=>wanted.includes(item[key])),"invalid_order");const map=new Map(present.map(item=>[item[key],item]));return wanted.map(id=>map.get(id));}
-    function command(doc,c,rowExpected) {
-      need(c && typeof c.type==="string","invalid_command");let target=null;
-      if(c.type==="apply_published_people"){shape(c,["type","publication"]);need(rowExpected&&rowExpected.payload,"publication_invalid");doc.people=clone(rowExpected.people);doc.groups=clone(rowExpected.groups);Object.assign(doc.song_refs,rowExpected.song_refs);}
-      else if(c.type==="create_person"){shape(c,["type","name"]);const n=name(c.name);need(!doc.people.some(p=>p.name===n),"conflict_name");need(doc.people.length<1024,"people_limit");target=newID();doc.people.push({id:target,name:n,kind:"person",entries:[],group_ids:[]});}
-      else if(c.type==="rename_person"){shape(c,["type","person_id","name"]);const p=person(doc,c.person_id),n=name(c.name);need(!doc.people.some(x=>x.id!==p.id&&x.name===n),"conflict_name");p.name=n;target=p.id;}
-      else if(c.type==="delete_person"){shape(c,["type","person_id"]);const p=person(doc,c.person_id);target=p.id;doc.people=doc.people.filter(x=>x.id!==target);}
-      else if(c.type==="reorder_people"){shape(c,["type","person_ids"]);doc.people=reordered(doc.people,c.person_ids);}
-      else if(c.type==="add_song"){shape(c,["type","ordinal","row_sha256","person_ids"]);integer(c.ordinal,0,source.length-1,"catalog_row_mismatch");need(c.row_sha256===rowExpected,"catalog_row_mismatch");need(!nonSongs.has(c.ordinal),"not_a_song");ids(c.person_ids,true);c.person_ids.forEach(id=>person(doc,id));doc.song_refs[c.ordinal]=rowExpected;for(const id of c.person_ids){const p=person(doc,id);if(!p.entries.some(e=>e.ordinal===c.ordinal)){need(p.entries.length<10000,"entries_limit");p.entries.push({id:newID(),ordinal:c.ordinal});}}}
-      else if(c.type==="reorder_entries"){shape(c,["type","person_id","entry_ids"]);const p=person(doc,c.person_id);p.entries=reordered(p.entries,c.entry_ids);target=p.id;}
-      else if(c.type==="remove_entry"){shape(c,["type","person_id","entry_id"]);const p=person(doc,c.person_id);uuid(c.entry_id);need(p.entries.some(e=>e.id===c.entry_id),"unknown_entry");p.entries=p.entries.filter(e=>e.id!==c.entry_id);target=p.id;}
-      else if(c.type==="create_group"){shape(c,["type","name"]);const n=name(c.name);need(!doc.groups.some(g=>g.name===n),"conflict_name");need(doc.groups.length<256,"groups_limit");target=newID();doc.groups.push({id:target,name:n});}
-      else if(c.type==="rename_group"){shape(c,["type","group_id","name"]);const g=group(doc,c.group_id),n=name(c.name);need(!doc.groups.some(x=>x.id!==g.id&&x.name===n),"conflict_name");g.name=n;target=g.id;}
-      else if(c.type==="delete_group"){shape(c,["type","group_id"]);target=group(doc,c.group_id).id;doc.groups=doc.groups.filter(g=>g.id!==target);doc.people.forEach(p=>p.group_ids=p.group_ids.filter(id=>id!==target));}
-      else if(c.type==="reorder_groups"){shape(c,["type","group_ids"]);doc.groups=reordered(doc.groups,c.group_ids);doc.people.forEach(p=>p.group_ids=doc.groups.filter(g=>p.group_ids.includes(g.id)).map(g=>g.id));}
-      else if(c.type==="set_person_groups"){shape(c,["type","person_id","group_ids"]);const p=person(doc,c.person_id);ids(c.group_ids);c.group_ids.forEach(id=>group(doc,id));p.group_ids=doc.groups.filter(g=>c.group_ids.includes(g.id)).map(g=>g.id);target=p.id;}
-      else if(c.type==="set_room_settings"){shape(c,["type","average_song_seconds","points_per_open_milli"]);doc.room_settings={average_song_seconds:integer(c.average_song_seconds,1,86400),points_per_open_milli:integer(c.points_per_open_milli,0,1000000000)};}
-      else if(c.type==="open_visit"){shape(c,["type","planned_end_at_utc"]);need(!doc.singing_visits.some(v=>v.status==="open"),"conflict_open_visit");need(doc.singing_visits.length<100000,"visits_limit");const started=now(),end=utc(c.planned_end_at_utc);need(end>started,"invalid_time");target=newID();doc.singing_visits.push({id:target,started_at_utc:started,planned_end_at_utc:end,local_start_date:localDate(started),timezone:"Asia/Taipei",average_song_seconds:doc.room_settings.average_song_seconds,points_milli:doc.room_settings.points_per_open_milli,status:"open",closed_at_utc:null});}
-      else if(c.type==="update_visit"){shape(c,["type","visit_id","planned_end_at_utc"]);const v=visit(doc,c.visit_id),end=utc(c.planned_end_at_utc);need(v.status==="open","conflict_visit_state");need(end>now()&&end>v.started_at_utc,"invalid_time");v.planned_end_at_utc=end;target=v.id;}
-      else if(c.type==="close_visit"){shape(c,["type","visit_id"]);const v=visit(doc,c.visit_id);need(v.status==="open","conflict_visit_state");const at=now();need(at>=v.started_at_utc,"invalid_clock");v.status="closed";v.closed_at_utc=at;target=v.id;}
-      else if(c.type==="void_visit"){shape(c,["type","visit_id"]);const v=visit(doc,c.visit_id);need(v.status!=="void","conflict_visit_state");if(v.status==="open"){const at=now();need(at>=v.started_at_utc,"invalid_clock");v.closed_at_utc=at;}v.status="void";target=v.id;}
-      else throw error("invalid_command");
-      return {type:c.type,target_id:target};
-    }
-    let initial;
-    try {
-      const initialRead=await transaction(false,doc=>({library_id:doc.library_id,song_refs:clone(doc.song_refs)}));
-      for(const [ordinal,digest] of Object.entries(initialRead.song_refs))need(digest===await rowDigest(Number(ordinal)),"catalog_row_mismatch");
-      knownLibrary=initialRead.library_id;
-      initial=await transaction(false,doc=>({snapshot:snapshot(doc),preferences:clone(doc.preferences)}));
-    } catch(failure) {closed=true;db.close();throw failure;}
-    const api={
-      async readLibrary(){return transaction(false,snapshot);},
-      async readPreferences(){return transaction(false,doc=>doc.preferences);},
-      async rowDigest(ordinal){return rowDigest(ordinal);},
-      async mutate(envelope,scope){
-        shape(envelope,["library_id","catalog_sha256","expected_revision","operation_id","command"]);shape(scope,["tab_id","draft_id"]);uuid(scope.tab_id);uuid(scope.draft_id);uuid(envelope.operation_id);integer(envelope.expected_revision,1,Number.MAX_SAFE_INTEGER);
-        need(envelope.library_id===knownLibrary && envelope.catalog_sha256===catalogSha256,"identity_mismatch");const wire=clone(envelope),bound=clone(scope),request=canonical(wire);
-        const expected=wire.command?.type==="add_song"?await rowDigest(wire.command.ordinal):wire.command?.type==="apply_published_people"?await preparePublication(wire.command.publication):null;
-        return transaction(true,doc=>{const previous=doc.receipts[wire.operation_id];if(previous){need(previous.request===request && canonical(previous.scope)===canonical(bound),"conflict_operation");return {ok:true,mutation_revision:previous.mutation_revision,snapshot:snapshot(doc),command_result:clone(previous.command_result)};}
-          need(doc.revision===wire.expected_revision,"conflict_revision");const result=command(doc,wire.command,expected);integer(doc.revision+1,2,Number.MAX_SAFE_INTEGER);const before=doc.revision++;const at=now();doc.receipts[wire.operation_id]={request,scope:bound,mutation_revision:doc.revision,command_result:result,at_utc:at};doc.audit.push({id:newID(),at_utc:at,action:result.type,target_id:result.target_id,before_revision:before,after_revision:doc.revision,operation_id:wire.operation_id});return {ok:true,mutation_revision:doc.revision,snapshot:snapshot(doc),command_result:result};});
-      },
-      async savePreferences(value,expectedRevision,operationID){prefs(value);integer(expectedRevision,0,Number.MAX_SAFE_INTEGER);uuid(operationID);const request=canonical({value,expectedRevision}),frozen=clone(value);return transaction(true,doc=>{const old=doc.preference_receipts[operationID];if(old){need(old.request===request,"conflict_operation");return {revision:old.revision,value:clone(frozen)};}need(doc.preferences.revision===expectedRevision,"conflict_preferences");integer(expectedRevision+1,1,Number.MAX_SAFE_INTEGER);doc.preferences={revision:expectedRevision+1,value:frozen};doc.preference_receipts[operationID]={request,revision:expectedRevision+1};return doc.preferences;});},
-      async exportData(){return transaction(false,doc=>({application_id:APP,export_schema:1,library:doc,exported_at_utc:now(),clock_source:"this_device_UTC",sync:"none"}));},
-      async restoreData(value,expectedRevision){shape(value,["application_id","export_schema","library","exported_at_utc","clock_source","sync"],"invalid_backup");need(value.application_id===APP&&value.export_schema===1&&value.clock_source==="this_device_UTC"&&value.sync==="none","invalid_backup");utc(value.exported_at_utc);const incoming=validate(clone(value.library));need(incoming.library_id===knownLibrary,"identity_mismatch");for(const ordinal of Object.keys(incoming.song_refs))need(incoming.song_refs[ordinal]===await rowDigest(Number(ordinal)),"catalog_row_mismatch");return transaction(true,doc=>{need(doc.revision===expectedRevision,"conflict_revision");const next=clone(incoming);next.revision=doc.revision+1;integer(next.revision,2,Number.MAX_SAFE_INTEGER);next.receipts=doc.receipts;next.preference_receipts=doc.preference_receipts;next.audit=doc.audit;next.audit.push({id:newID(),at_utc:now(),action:"restore_import",target_id:doc.library_id,before_revision:doc.revision,after_revision:next.revision,operation_id:null});next.preferences={revision:doc.preferences.revision+1,value:next.preferences.value};Object.assign(doc,next);return snapshot(doc);});},
-      close(){if(!closed){closed=true;db.close();}},
-      clockSource:"this_device_UTC", databaseName:DB, initial:clone(initial)
-    };
-    return Object.freeze(api);
-  }
-  globalThis.P126GithubStorage=Object.freeze({create,applicationID:APP,databaseName:DB,defaultPreferences:clone(DEFAULT_PREFS)});
 })();
 
 const P126_CATALOG_CORRECTIONS = {"base_catalog_sha256":"5085ba5afc32e304ccc434f6b94cfc12f01a38e8fd033dd05746a7deb46a981a","base_catalog_rows":59412,"corrections":[{"ordinal":2,"expected_row_sha256":"ea1cf2a07e9bbf31675ba76b720a231f3caaea89349f77fa3177b7bf97e5c8f9","expected":{"who":"","id":"916713","title":"-","artist":"劉德華","lang":"1.國語","page":"P.001","len":"1","book":"原聲原影"},"changes":{"title":"一"}},{"ordinal":628,"expected_row_sha256":"17d31bb8054a9225116573a10afeb339552b87aaf46815644a80c6523f14dc56","expected":{"who":"","id":"926856","title":"灰燼","artist":"呂馨","lang":"1.國語","page":"P.008","len":"2","book":"原聲原影"},"changes":{"artist":"呂薔"}},{"ordinal":629,"expected_row_sha256":"2ab8bf8266d8a9dfda451be86a026f4e28836f080b9b356f58bb7af0e4bdd04d","expected":{"who":"","id":"926055","title":"米兒","artist":"美秀樂團、鄭小韻","lang":"1.國語","page":"P.008","len":"2","book":"原聲原影"},"changes":{"artist":"美秀集團、鄭小韻"}},{"ordinal":638,"expected_row_sha256":"59c029a1ffd44f48fbcc77998a5269b1e9650a531f7e4250025253d7d31747f8","expected":{"who":"","id":"919400","title":"耳朵","artist":"林育嘉","lang":"1.國語","page":"P.008","len":"2","book":"原聲原影"},"changes":{"artist":"林宥嘉"}},{"ordinal":654,"expected_row_sha256":"075b2841a8dfda915ab1b8c870f58cff169c5cb7c0065f89b60ed4e2b4156140","expected":{"who":"","id":"926840","title":"至緊","artist":"邱比","lang":"1.國語","page":"P.008","len":"2","book":"原聲原影"},"changes":{"title":"至繁"}},{"ordinal":658,"expected_row_sha256":"8dbfee7f7ff73a14669154faa2600f0e03c65913538dbbd453499fa871f67205","expected":{"who":"","id":"927674","title":"伯父","artist":"覆予E.SO","lang":"1.國語","page":"P.008","len":"2","book":"原聲原影"},"changes":{"artist":"瘦子E.SO"}},{"ordinal":659,"expected_row_sha256":"eae7d89243d67e3ed509a748054e3868c87ae3feaf8954476f30168f4fcc270f","expected":{"who":"","id":"917815","title":"伯樂","artist":"林育嘉","lang":"1.國語","page":"P.008","len":"2","book":"原聲原影"},"changes":{"artist":"林宥嘉"}},{"ordinal":680,"expected_row_sha256":"6b604a1898dc29ab65e542a6f149b0aabd4d4e0fbdf91c1ab1ccf7011ad0218d","expected":{"who":"","id":"918574","title":"冷戰","artist":"黃義達","lang":"1.國語","page":"P.008","len":"2","book":"原聲原影"},"changes":{"artist":"楊丞琳"}},{"ordinal":695,"expected_row_sha256":"c9e755d9e91cf70518ee1231d7c31473a64b79ac8a47314a7cc20297665e9d99","expected":{"who":"","id":"913874","title":"告解","artist":"祝帆剛","lang":"1.國語","page":"P.008","len":"2","book":"原聲原影"},"changes":{"artist":"祝釩剛"}},{"ordinal":2406,"expected_row_sha256":"dbe57410170970b7237151b7af3266f19f80321d07c4c79d1b6b640b0e458a85","expected":{"who":"","id":"923047","title":"46024","artist":"炎亞綸、G.NA","lang":"1.國語","page":"P.027","len":"5","book":"原聲原影"},"changes":{"title":"1/2","len":"3"}},{"ordinal":2618,"expected_row_sha256":"631282123be24f01728d35cfd71a0d2ffcdb8e361e05a0add1a9e575cad40b35","expected":{"who":"","id":"927347","title":"不要怕","artist":"鄧美美","lang":"1.國語","page":"P.029","len":"3","book":"原聲原影"},"changes":{"id":"917347","artist":"郭美美"}},{"ordinal":2691,"expected_row_sha256":"b509ef41c546724d53ddb4f3c0cb936dcae4d710322aaba7023b0a0c8e65dbc0","expected":{"who":"","id":"92411","title":"太聰明","artist":"陳綺貞","lang":"1.國語","page":"P.030","len":"3","book":"原聲原影"},"changes":{"id":"52411"}},{"ordinal":2814,"expected_row_sha256":"16fe869f290a84e604efc4f2d7d3daf742df8235f54a5a807733e17265a8e2ff","expected":{"who":"","id":"910414","title":"末班車","artist":"蕭煌奇","lang":"1.國語","page":"P.031","len":"3","book":"原聲原影"},"changes":{"id":"920414"}},{"ordinal":3790,"expected_row_sha256":"d0a3ee1208ba2a1c7c6efdb88e281e421c1da42abdc82fefa6efd90048c9d293","expected":{"who":"","id":"915476","title":"無重力","artist":"杜忻恬","lang":"1.國語","page":"P.042","len":"3","book":"原聲原影"},"changes":{"id":"925476"}},{"ordinal":3832,"expected_row_sha256":"b83504f53fa6492afd75cf82a61bf80d9bed4ab5ef9474dbd01651ef0083c605","expected":{"who":"","id":"92257","title":"等不及","artist":"徐懷鈺","lang":"1.國語","page":"P.042","len":"3","book":"原聲原影"},"changes":{"id":"52257"}},{"ordinal":4385,"expected_row_sha256":"f4a9478653f96ce5df3606403d9982faa60a0682463601de8eda6c001f097ed1","expected":{"who":"","id":"915823","title":"0.423611111111111","artist":"張芯瑜","lang":"1.國語","page":"P.049","len":"17","book":"原聲原影"},"changes":{"title":"10:10","len":"4"}},{"ordinal":4386,"expected_row_sha256":"c066a303ce5e669c4f6a3a58e646b7ac8d63f6057989ba009b3885d950be8890","expected":{"who":"","id":"923054","title":"0.423611111111111","artist":"金承熙","lang":"1.國語","page":"P.049","len":"17","book":"原聲原影"},"changes":{"title":"10:10","len":"4"}},{"ordinal":4387,"expected_row_sha256":"ed98b98074cb869fd2ba169d1b01732e078822ab7abc9f6c7907e75808889bbe","expected":{"who":"","id":"52270","title":"204","artist":"張震嶽","lang":"1.國語","page":"P.049","len":"3","book":"原聲原影"},"changes":{"title":"0204","len":"4"}},{"ordinal":5107,"expected_row_sha256":"40adfa876861738b27a935565029533184ce9f3b6d75b13eac90706f0e723c96","expected":{"who":"","id":"918905","title":"老人與海","artist":"鄧紫棋","lang":"1.國語","page":"P.056","len":"4","book":"原聲原影"},"changes":{"id":"928905"}},{"ordinal":5681,"expected_row_sha256":"6dd316e64d28e4d6dae5fd57dfa14b1e93ac71352e7f81821c3efbdd3ac5741a","expected":{"who":"","id":"917258","title":"勇者之歌","artist":"謝譜鋒","lang":"1.國語","page":"P.062","len":"4","book":"原聲原影"},"changes":{"artist":"謝霆鋒"}},{"ordinal":5683,"expected_row_sha256":"286c0c3f752be161221188545be6a1f42b91d1626fbda80e5b24decbc811727b","expected":{"who":"","id":"92376","title":"勇敢一點","artist":"趙傳","lang":"1.國語","page":"P.062","len":"4","book":"原聲原影"},"changes":{"id":"52376"}},{"ordinal":6136,"expected_row_sha256":"f544d2cb88a628e917f3f422ec0edbbb3054352b84717d2d07041207eb801ade","expected":{"who":"","id":"915154","title":"理想時代","artist":"小宇","lang":"1.國語","page":"P.067","len":"4","book":"原聲原影"},"changes":{"id":"925154"}},{"ordinal":7003,"expected_row_sha256":"b174b8e1f8011d211425bb3c0b51c1be39ef801898e9b0e7008f988060fdbcb5","expected":{"who":"","id":"918700","title":"繼續墮落","artist":"動力火車","lang":"1.國語","page":"P.077","len":"4","book":"原聲原影"},"changes":{"title":"繼續轉動"}},{"ordinal":7124,"expected_row_sha256":"4210f816bc418169b11ee171f7de1993c043c8ce2dec4926b3528262e62c7b2c","expected":{"who":"","id":"92815","title":"九九乘法表","artist":"徐熙娣","lang":"1.國語","page":"P.079","len":"5","book":"原聲原影"},"changes":{"id":"928175"}},{"ordinal":8459,"expected_row_sha256":"97b9d3736690054e263ac74cad026075e8cb81f0fa1c613241bf4b72ed22918c","expected":{"who":"","id":"921800","title":"開始了寂寞","artist":"陸蠡","lang":"1.國語","page":"P.100","len":"5","book":"原聲原影"},"changes":{"artist":"陸瑤"}},{"ordinal":8462,"expected_row_sha256":"f6ef65e7463abbcc23f772fa1f26c13700c5e1f8e72e7affb695becf4ade5063","expected":{"who":"","id":"17056","title":"黃昏的故鄉","artist":"羅龍","lang":"1.國語","page":"P.100","len":"5","book":"原聲原影"},"changes":{"artist":"龍飄飄"}},{"ordinal":8465,"expected_row_sha256":"871609dcb83212dda6eb9692ab45142ba968e4a5f0f223699aac75bae4b742a8","expected":{"who":"","id":"918929","title":"黑咖啡日記","artist":"管承旭","lang":"1.國語","page":"P.100","len":"5","book":"原聲原影"},"changes":{"artist":"言承旭"}},{"ordinal":8466,"expected_row_sha256":"cc805d6b3b0de8c22056a3ce9b8c0ac694ddc6621e5afb8127abf3d1a47a8922","expected":{"who":"","id":"925616","title":"黑夜間白天","artist":"林俊傑","lang":"1.國語","page":"P.100","len":"5","book":"原聲原影"},"changes":{"title":"黑夜問白天"}},{"ordinal":9778,"expected_row_sha256":"f7bb79e18ccef1c0e9e5dfa8d47333a3508b55d03ff818334f97be0b2ba66a45","expected":{"who":"","id":"910779","title":"在你和天空之間","artist":"趙之聲","lang":"1.國語","page":"P.122","len":"7","book":"原聲原影"},"changes":{"artist":"趙之璧"}},{"ordinal":13375,"expected_row_sha256":"c85a087da5ed0ad264345e86a14455ac6c712bb33b6bd0258e39529f11521be6","expected":{"who":"","id":"911122","title":"204","artist":"鄭進一、安迪","lang":"2.台語","page":"P.029","len":"3","book":"原聲原影"},"changes":{"title":"0204","len":"4","artist":"鄭進一、安迪、唐從聖"}},{"ordinal":13844,"expected_row_sha256":"2c25d4342c366527d693672a35abe77c98a5801b929f0ffb04ea8a0cfcf9bd95","expected":{"who":"","id":"924522","title":"好好做人","artist":"陳雷","lang":"2.台語","page":"P.034","len":"4","book":"原聲原影"},"changes":{"id":"914522"}},{"ordinal":13869,"expected_row_sha256":"3d4791bc0f89b8993088951ebda44ada8902723f0d221190c1aaec351548eeda","expected":{"who":"","id":"922834","title":"有情有緣","artist":"陳美鳳","lang":"2.台語","page":"P.034","len":"4","book":"原聲原影"},"changes":{"id":"912834"}},{"ordinal":14128,"expected_row_sha256":"287afda7132409bafc6bc8a998499516522bcb9675dc0d2f8ec8e1f0cbad80a0","expected":{"who":"","id":"928132","title":"花開花謝","artist":"鄭時芬","lang":"2.台語","page":"P.037","len":"4","book":"原聲原影"},"changes":{"artist":"郭婷筠"}},{"ordinal":14606,"expected_row_sha256":"0cfd374b2ccf9fd40d17f95a47f0947326a0f929bbcfbb86359b6331de2d0112","expected":{"who":"","id":"917297","title":"深深的愛","artist":"詹雅雯","lang":"2.台語","page":"P.042","len":"4","book":"原聲原影"},"changes":{"id":"921297","artist":"曹雅雯"}},{"ordinal":14885,"expected_row_sha256":"e6a391db981aba27f5b4837c47446e8922b48ab81da48afc502d5f766f9e4922","expected":{"who":"","id":"917817","title":"愛你的心","artist":"陳怡婷","lang":"2.台語","page":"P.045","len":"4","book":"原聲原影"},"changes":{"id":"927817"}},{"ordinal":15145,"expected_row_sha256":"49613824900bdc2b1e39bee5658d0b5d3614671c3a1fa373d562b9b0ff36db32","expected":{"who":"","id":"916438","title":"醉夢一生","artist":"張蓉蓉","lang":"2.台語","page":"P.048","len":"4","book":"原聲原影"},"changes":{"id":"914638"}},{"ordinal":21,"expected_row_sha256":"78b68d778888c9eb2d2f96b4a7057d49d01d6b5d9d2e00964d68fa90f527709f","expected":{"who":"","id":"920804","title":"找","artist":"張靖","lang":"1.國語","page":"P.001","len":"1","book":"原聲原影"},"changes":{"artist":"張婧"}},{"ordinal":40,"expected_row_sha256":"6f31a521eeb940d9e9d9fbf83a84ce2124ad569b088caf0df6c6a59dcf5aaa61","expected":{"who":"","id":"925399","title":"盼","artist":"蘇珊娜","lang":"1.國語","page":"P.001","len":"1","book":"原聲原影"},"changes":{"artist":"蘇珮卿"}},{"ordinal":46,"expected_row_sha256":"c0ef9d2ed12be744d6357d2b388f3e284d19e856680c06c2cfac71fb6f9ca951","expected":{"who":"","id":"928091","title":"哥","artist":"熊仔PoPo J","lang":"1.國語","page":"P.001","len":"1","book":"原聲原影"},"changes":{"artist":"熊仔、POPO J、王ADEN"}},{"ordinal":47,"expected_row_sha256":"e705858a05b8cb4ea2bf2ea6e2fa9adeea93f780f549a1dbcc44dd3d932eb81a","expected":{"who":"","id":"921347","title":"哭","artist":"阿桑","lang":"1.國語","page":"P.001","len":"1","book":"原聲原影"},"changes":{"artist":"阿樂"}},{"ordinal":14127,"expected_row_sha256":"add537de50941b7f10aa6ad29dc1b4bd663e1f7ece63bf12609cca1dafeda07c","expected":{"who":"","id":"92811","title":"花開花謝","artist":"詹曼鈴","lang":"2.台語","page":"P.037","len":"4","book":"原聲原影"},"changes":{"id":"915011"}},{"ordinal":14129,"expected_row_sha256":"bbff8aa90b6dfdc139d5f4eb9be7c04d421067358e6c9e1b1f0a5e50ab8642d6","expected":{"who":"","id":"921509","title":"花會再開","artist":"劉依純、蕭煌阿嬤","lang":"2.台語","page":"P.037","len":"4","book":"原聲原影"},"changes":{"artist":"劉依純、辦桌阿傑"}}],"non_song_records":[{"ordinal":8721,"expected_row_sha256":"0e1f436b3c52c5ad45caaca28d5a426f475425ed804b9b6ed55ad5906913709c","expected":{"who":"","id":"編號","title":"名稱","artist":"主唱者","lang":"1.國語","page":"P.105","len":"2","book":"原聲原影"}},{"ordinal":8753,"expected_row_sha256":"0e1f436b3c52c5ad45caaca28d5a426f475425ed804b9b6ed55ad5906913709c","expected":{"who":"","id":"編號","title":"名稱","artist":"主唱者","lang":"1.國語","page":"P.105","len":"2","book":"原聲原影"}}]};
@@ -60071,6 +59852,8 @@ function p126ParseUtc(value) {
 function createPersonalSongbook(adapter) {
   "use strict";
   const root = adapter && adapter.root;
+  const readOnly = adapter?.readOnly === true;
+  const readOnlyActions = new Set(["retry-init","retry-library","search","playlist","person-playlist","back","detail","draw","do-draw","draw-settings","filter","reset-filter","clear","save-edit","cancel-edit","copy-playlists","copy-saved-playlists","copy-back","copy-people","pick-sources","pick-songs","pick-all","pick-none","pick-more","copy-picks","copy-detail","copy-draw","copy-draw-one"]);
   if (!root || root.nodeType !== 1 || !Array.isArray(adapter.songs)) throw new TypeError("Invalid songbook adapter");
   for (const name of ["readLibrary", "beginEdit", "discardEdit", "changeLibrary", "finishPreferences", "openAppearance", "onNotice"])
     if (typeof adapter[name] !== "function") throw new TypeError("Missing songbook adapter method");
@@ -60091,11 +59874,11 @@ function createPersonalSongbook(adapter) {
     composing: false, renderPending: false, scroll: { search: 0, playlist: 0 },
     drag: null, virtualFrame: 0, searchTimer: 0, resizeObserver: null,
     notice: "", noticeError: false, preferences: null,
-    confirmedNotice:"",copySourceChanged:false,groupFilter: "", copyStage:"people", copyOrdinals:new Set(), copyCandidates:[], pickerLimit:100,
-    clockOffset:0, clockTimer:0, drawerReturn:"playlist", deletePerson:"", formValues:{}, renderedScreen:"",
+    confirmedNotice:"",copySourceChanged:false,groupFilter: "", copyMode:"playlists", copyStage:"people", copyOrdinals:new Set(), copyCandidates:[], pickerLimit:100,
+    clockOffset:0, clockTimer:0, deletePerson:"", formValues:{}, renderedScreen:"",
     drawReturn: "search", drawScope: "search", drawCount: 1, drawPicked: [], drawSlogan: "", drawCopyText: "", copyPeople: new Set(), copyFallback: "", copying: false
   };
-  let header, heading, backButton, main, baseMain, overlay, drawer, drawerHeading, drawerMain, status, footer, drawerFocusReturn;
+  let header, heading, backButton, main, baseMain, status, footer;
 
   function validPreferences(value) {
     return value && ["dark", "light"].includes(value.theme) && value.shown &&
@@ -60114,6 +59897,8 @@ function createPersonalSongbook(adapter) {
   function isClean() { return !state.edit && !state.opening && !state.saving && !state.pendingCommand && !state.composing; }
   function sessionClean() { return (!state.edit || state.edit.mode==="filter") && !state.opening && !state.saving && !state.pendingCommand && !state.composing; }
   function button(action, label, attrs = "") {
+    if (readOnly && !readOnlyActions.has(action)) return "";
+    if (["playlist","people"].includes(action) && typeof adapter.labels?.[action] === "string") label=adapter.labels[action];
     // Song titles and person choices are data, not action-only labels.
     if (action === "detail" || action === "add-to-person")
       return '<button type="button" data-action="' + action + '" ' + attrs + '>' + label + '</button>';
@@ -60143,20 +59928,17 @@ function createPersonalSongbook(adapter) {
     if (state.shell) return;
     state.shell = true;
     root.classList.add("p126-app"); root.dataset.theme = state.preferences.theme;
-    root.innerHTML = '<header id="topHeader" class="p126-head">' + button("appearance","外觀設定",'id="btnSettings"') +
+    root.innerHTML = '<header id="topHeader" class="p126-head">' +
+      (readOnly ? '<span class="p126-readonly-mark" aria-label="唯讀歌本">唯讀</span>' : button("appearance", "外觀設定", 'id="btnSettings"')) +
       '<div class="p126-heading"><div class="p126-kicker">二結 · SONGBOOK</div><h1>二結點歌本(Web)</h1></div>' +
-      '<div class="p126-person-tools"><span class="p126-compact-room" role="timer" aria-live="off" aria-label="尚未開啟包廂" data-room-compact>未開廂</span>' +
-      button("playlist","人物歌單",'class="p126-person-icon"') + button("open-room","開啟包廂",'class="p126-room-icon"') + '</div></header>' +
+      '<div class="headerBtns">' + button("draw", "抽歌", 'id="btnDraw"') + '</div>' +
+      button("back", "返回上一個歌本畫面", 'class="p126-quiet" hidden') + '</header>' +
       '<div class="p126-status" role="status" aria-live="polite"></div><main class="p126-main p126-base-main"></main>' +
-      '<div class="p126-overlay" hidden><section class="p126-sheet" role="dialog" aria-modal="true" aria-labelledby="p126DrawerTitle" tabindex="-1">' +
-      '<header class="p126-drawer-head"><h2 id="p126DrawerTitle"></h2>' + button("back","返回上一個歌本畫面") + '</header>' +
-      '<div class="p126-drawer-main"></div></section></div>' +
       '<footer class="p126-foot">全部歌目唯讀；人物歌單獨立保存。</footer>';
     header = root.querySelector("#topHeader"); heading = header.querySelector("h1");
-    baseMain = root.querySelector(".p126-base-main"); overlay = root.querySelector(".p126-overlay");
-    drawer = overlay.querySelector(".p126-sheet"); drawerHeading = overlay.querySelector("#p126DrawerTitle");
-    drawerMain = overlay.querySelector(".p126-drawer-main"); backButton = overlay.querySelector('[data-action="back"]');
-    main = baseMain; status = root.querySelector(".p126-status"); footer = root.querySelector(".p126-foot");
+    backButton = header.querySelector('[data-action="back"]');
+    main = root.querySelector(".p126-main"); baseMain = main;
+    status = root.querySelector(".p126-status"); footer = root.querySelector(".p126-foot");
     state.clockTimer = setInterval(updateCompactRoom, 1000);
   }
   function acceptLibrary(snapshot) {
@@ -60278,8 +60060,10 @@ function createPersonalSongbook(adapter) {
     return '<form class="p126-search" data-form="search"><label><span class="p126-sr">歌名、歌手或編號</span>' +
       '<input id="q" type="text" data-field="query" value="' + escape(state.query) + '" placeholder="搜尋歌名、歌手、編號" autocomplete="off" enterkeyhint="search"></label>' +
       '<button class="p126-primary p126-icon-button" type="submit" aria-label="搜尋" title="搜尋" data-p126-icon="search">' + p126ControlIcon("search") + '</button></form>' +
-      '<div class="p126-tools">' + button("draw","抽歌",'id="btnDraw"') + button("filter", "篩選" + (criteria() === "全部歌曲" ? "" : " · 已套用"), 'id="btnFilter"') +
-      button("pick-sources","從人物歌單選本次歌曲",state.libraryAvailable ? "" : "disabled") + '</div>' +
+      '<div class="p126-tools">' + button("filter", "篩選" + (criteria() === "全部歌曲" ? "" : " · 已套用"), 'id="btnFilter"') +
+      '<div class="p126-person-tools">' + button("playlist", "人物歌單", 'class="p126-person-icon"' + (state.libraryAvailable ? '' : ' disabled')) +
+      (readOnly ? "" : '<span class="p126-compact-room" role="timer" aria-live="off" aria-label="尚未開啟包廂" data-room-compact>未開廂</span>') +
+      button("open-room", "開啟包廂", 'class="p126-room-icon"' + (state.libraryAvailable ? '' : ' disabled')) + '</div></div>' +
       '<div class="p126-summary p126-count" id="p126ResultCount" aria-live="polite">' + escape(criteria()) + ' · 共 ' + state.results.length.toLocaleString() + ' 首</div>' +
       (!state.libraryAvailable ? '<div class="p126-tools"><span class="p126-note">歌單暫時無法載入</span>' + button("retry-library", "重試歌單") + '</div>' : "") +
       viewport("search");
@@ -60332,7 +60116,7 @@ function createPersonalSongbook(adapter) {
           button("person-playlist", "開歌單", 'data-person="' + escape(id) + '"') + '</div></section>';
       }).join("") + field("新增人物", '<input type="text" data-field="new-person" value="' + escape(edit.newName) + '" placeholder="輸入新人物名稱" autocomplete="off">') +
       '<p class="p126-note">完成後按儲存變更；取消只捨棄這次尚未保存的變更。</p></form>' + editorActions() +
-      '<div class="p126-tools">' + button("appearance", "外觀設定") + (typeof adapter.preparePublishedPeople==="function"?button("load-published-people","載入已發布歌單"):"") + '</div>';
+      '<div class="p126-tools">' + button("appearance", "外觀設定") + '</div>';
   }
   function playlistEntries() {
     const person = state.people.get(state.selectedPerson);
@@ -60361,32 +60145,34 @@ function createPersonalSongbook(adapter) {
     return state.library.people.filter(person=>!state.groupFilter || (state.groupFilter==="ungrouped" ? !person.group_ids.length : person.group_ids.includes(state.groupFilter)));
   }
   function renderPlaylist() {
-    const person=state.people.get(state.selectedPerson),editing=state.edit?.mode==="playlist";
-    if (!person) return '<div class="p126-empty"><h2>還沒有人物歌單</h2><p>先新增人物，再把歌曲加入。</p>'+button("people","人物設定")+button("groups","人物分組")+'</div>';
+    const person=state.people.get(state.selectedPerson), editing=state.edit?.mode==="playlist";
+    if (!person) return '<div class="p126-empty"><h2>還沒有人物歌單</h2><p class="p126-note">公開版目前沒有已發布的人物歌單。</p>' + button("people", "人物設定") + button("groups", "人物分組") + '</div>';
     const candidates=visiblePeople();
-    if(!candidates.length)return field("人物分組",'<select data-field="person-group">'+groupOptions(state.groupFilter)+'</select>')+'<p class="p126-note">這組還沒有人物；請切換分組或到人物設定調整。</p><div class="p126-tools">'+button("groups","管理人物分組")+button("people","人物設定")+'</div>';
-    return '<div class="p126-playlist-tools" data-playlist-mode="'+(editing?'edit':'view')+'">'+field("人物分組",'<select data-field="person-group"'+(editing?' disabled':'')+'>'+groupOptions(state.groupFilter)+'</select>')+
-      field("人物歌單",'<select data-field="playlist-person"'+(editing?' disabled':'')+'>'+candidates.map(value=>'<option value="'+escape(value.id)+'"'+(value.id===person.id?' selected':'')+'>'+escape(value.name)+'</option>').join("")+'</select>')+
-      (editing?'<span class="p126-note">拖曳把手，或用上／下調整。</span>':button("delete-person","刪除人物及整張歌單",'data-person="'+escape(person.id)+'" class="p126-danger"'))+'</div>'+
-      (!candidates.length?'<p class="p126-note">這組還沒有人物。</p>':'')+
-      '<div class="p126-tools">'+button("groups","人物分組")+button("edit-person-groups","調整此人物分組",'data-person="'+escape(person.id)+'"')+
-      (editing?'':button("draw","從這位人物歌單抽歌")+button("edit-playlist","編輯歌曲排列與逐首移除"))+button("people","人物設定")+'</div>'+
-      '<div class="p126-summary p126-count">'+escape(person.name)+' · '+entryCountText(playlistEntries())+(editing?' · 尚在編輯':'')+'</div>'+viewport("playlist")+
-      (editing?editorActions():'<div class="p126-actions">'+button("copy-playlists","複製人物歌單")+button("pick-sources","選本次要唱的歌")+button("search","搜尋並加入歌曲")+'</div>');
+    if (!candidates.length) return '<div class="p126-form">' + field("人物分組", '<select data-field="person-group">' + groupOptions(state.groupFilter) + '</select>') +
+      '<p class="p126-note">這組目前沒有已發布的人物；可切換其他分組。</p></div><div class="p126-actions">' + button("people", "人物設定") + button("groups", "人物分組") + '</div>';
+    return '<div class="p126-playlist-tools" data-playlist-mode="' + (editing?'edit':'view') + '">' + field("人物歌單", '<select data-field="playlist-person"' + (editing?' disabled':'') + '>' +
+      candidates.map(value=>'<option value="' + escape(value.id) + '"' + (value.id===person.id?' selected':'') + '>' + escape(value.name) + '</option>').join("") + '</select>') +
+      (editing?'<span class="p126-note">拖曳左側把手，或用上／下調整。</span>':button("edit-playlist", "編輯排列", state.libraryAvailable?"":"disabled") +
+      button("delete-person", "刪除人物及整張歌單", 'data-person="' + escape(person.id) + '" class="p126-danger"')) + '</div>' +
+      (!editing?'<div class="p126-tools p126-group-tools">' + field("人物分組", '<select data-field="person-group">' + groupOptions(state.groupFilter) + '</select>') +
+      button("groups", "管理人物分組") + button("edit-person-groups", "調整此人物分組", 'data-person="' + escape(person.id) + '"') + '</div>':'') +
+      '<div class="p126-summary p126-count">' + escape(person.name) + ' · ' + entryCountText(playlistEntries()) + (editing?' · 尚在編輯':'') + '</div>' +
+      viewport("playlist") + (editing?editorActions():'<div class="p126-actions">' + button("people", "人物設定") + button("copy-playlists", "複製歌單", state.libraryAvailable?"":"disabled") + button("search", "回歌曲搜尋") +
+      button("pick-sources", "選本次要唱的歌", state.libraryAvailable?"":"disabled") + '</div>');
   }
   function renderCopy() {
     const people = state.library ? state.library.people : [];
-    if (state.copyStage === "songs") return renderPicks();
+    if (state.copyMode === "picks" && state.copyStage === "songs") return renderPicks();
     const count = people.filter(person => state.copyPeople.has(person.id)).length;
-    return '<div class="p126-form"><p>勾選人物，可複製完整歌單，或繼續挑本次要唱的歌。原人物歸屬不會改變。</p>' +
+    return '<div class="p126-form"><p>' + (state.copyMode === "picks" ? '勾選來源人物，再繼續挑本次要唱的歌曲。只影響本次複製，原人物歸屬不會改變。' : '勾選要複製的人物。只複製已儲存的歌單，保留人物與歌曲原順序。') + '</p>' +
       people.map(person => '<label class="p126-choice"><input type="checkbox" data-field="copy-person" data-person="' + escape(person.id) + '"' +
         (state.copyPeople.has(person.id) ? ' checked' : '') + (state.copying ? ' disabled' : '') + '><span>' + escape(person.name) +
         '</span><span class="p126-note">' + entryCountText(person.entries) + '</span></label>').join("") +
       (!people.length ? '<p class="p126-note">還沒有人物歌單可複製。</p>' : '') +
       (state.copyFallback ? '<label class="p126-field p126-copy-fallback"><span class="p126-field-label">請選取以下內容，使用系統的複製功能</span>' +
         '<textarea id="p126CopyFallback" readonly rows="12" aria-label="可手動複製的歌單內容">' + escape(state.copyFallback) + '</textarea></label>' : '') +
-      '</div><div class="p126-actions">' + button("pick-songs","繼續勾選本次歌曲",!count ? "disabled" : "") + button("copy-saved-playlists", state.copying ? "正在複製…" : "複製到剪貼簿", 'class="p126-primary"' +
-        (!count || !state.libraryAvailable || state.copying ? ' disabled' : '')) +
+      '</div><div class="p126-actions">' + (state.copyMode === "picks" ? button("pick-songs", "繼續勾選本次歌曲", !count ? "disabled" : "") : button("copy-saved-playlists", state.copying ? "正在複製…" : "複製到剪貼簿", 'class="p126-primary"' +
+        (!count || !state.libraryAvailable || state.copying ? ' disabled' : ''))) +
       button("copy-back", "返回歌單", state.copying ? "disabled" : "") + '</div>';
   }
   async function copySavedPlaylists() {
@@ -60442,15 +60228,15 @@ function createPersonalSongbook(adapter) {
   function formatPoints(value) {return (value/1000).toLocaleString("zh-TW",{maximumFractionDigits:3});}
   function updateCompactRoom() {
     if (!state.shell) return;
-    const target=header.querySelector('[data-room-compact]'),visit=openVisit();
+    const target=root.querySelector('[data-room-compact]'),visit=openVisit();
     if (!target) return;
     if (!state.libraryAvailable) {target.textContent="未載入";target.title="人物及包廂資料尚未載入";target.setAttribute("aria-label",target.title);return;}
-    if (!visit) {target.textContent="未開廂";target.title="尚未開啟包廂";target.setAttribute("aria-label",target.title);const button=header.querySelector('[data-action="open-room"]');button.setAttribute("aria-label","開啟包廂");button.title="開啟包廂";return;}
+    if (!visit) {target.textContent="未開廂";target.title="尚未開啟包廂";target.setAttribute("aria-label",target.title);const button=root.querySelector('[data-action="open-room"]');button.setAttribute("aria-label","開啟包廂");button.title="開啟包廂";return;}
     const seconds=Math.max(0,Math.floor((p126ParseUtc(visit.planned_end_at_utc)-roomNow())/1000));
     target.textContent=formatDuration(seconds)+'('+Math.floor(seconds/visit.average_song_seconds)+'首)';
     target.title='剩餘 '+Math.floor(seconds/3600)+' 小時 '+Math.floor(seconds/60)%60+' 分鐘；平均每首 '+visit.average_song_seconds/60+' 分鐘';
     target.setAttribute("aria-label",target.title+'；剩餘可點 '+Math.floor(seconds/visit.average_song_seconds)+' 首');
-    header.querySelector('[data-action="open-room"]').setAttribute("aria-label","調整本次包廂");
+    root.querySelector('[data-action="open-room"]').setAttribute("aria-label","調整本次包廂");
   }
   function localDateTime(utc) {const date=new Date(p126ParseUtc(utc)+8*3600000);return date.toISOString().slice(0,16);}
   function taipeiMonth() {return new Date(roomNow()+8*3600000).toISOString().slice(0,7);}
@@ -60637,53 +60423,54 @@ function createPersonalSongbook(adapter) {
     const blocked=busy() || !!state.pendingCommand || !!state.edit;
     if(query)query.disabled=blocked;
     for(const node of baseMain.querySelectorAll('button')) {
-      const needsLibrary=["pick-sources","add"].includes(node.dataset.action);
+      const needsLibrary=["playlist","open-room","add"].includes(node.dataset.action);
       node.disabled=blocked || (needsLibrary && !state.libraryAvailable);
     }
   }
   function render() {
     if (!state.shell) return;
     if (state.composing) {state.renderPending=true;return;}
-    rememberScroll(); const token=focusToken(),previousScreen=state.renderedScreen;
-    const opened=state.screen!=="search",wasOpened=!overlay.hidden;
-    if (opened && !wasOpened) drawerFocusReturn=root.ownerDocument.activeElement;
-    overlay.hidden=!opened; header.inert=opened; baseMain.inert=opened;
-    main=opened?drawerMain:baseMain;
-    const titles={search:"二結點歌本(Web)",filter:"篩選歌曲",add:"加入人物歌單",people:"人物設定",playlist:"人物歌單",copy:state.copyStage==="songs"?"本次要唱的歌":"選擇人物歌單",detail:"歌曲明細",draw:"抽歌","draw-results":"抽到啦",room:"包廂時間","room-settings":"唱歌與點數設定","room-history":"唱歌日期與點數",groups:"人物分組","person-groups":"人物所屬分組","delete-person":"刪除人物歌單","delete-group":"刪除分組","void-room":"作廢唱歌紀錄"};
-    drawerHeading.textContent=titles[state.screen] || "歌本";
+    rememberScroll(); const token=focusToken();
+    const titles={search:"二結點歌本(Web)",filter:"篩選歌曲",add:"加入人物歌單",people:"人物設定",playlist:"人物歌單",copy:state.copyMode==="picks"?(state.copyStage==="songs"?"本次要唱的歌":"選擇來源人物"):"複製歌單",detail:"歌曲明細",draw:"抽歌 🎲","draw-results":"抽到啦 🎉",room:"包廂時間","room-settings":"唱歌與點數設定","room-history":"唱歌日期與點數",groups:"人物分組","person-groups":"人物所屬分組","delete-person":"刪除人物歌單","delete-group":"刪除分組","void-room":"作廢唱歌紀錄"};
+    heading.textContent=(["playlist","people"].includes(state.screen) && typeof adapter.labels?.[state.screen] === "string" ? adapter.labels[state.screen] : titles[state.screen]) || "歌本";
+    backButton.hidden=state.screen==="search";
     backButton.disabled=busy() || state.pendingKind==="unknown";
-    status.textContent=state.notice;status.dataset.error=String(state.noticeError);
-    footer.textContent=state.library?'全部歌目唯讀 · 人物、分組與唱歌紀錄獨立保存':'固定歌目可搜尋 · 人物資料尚未載入';
-    if (!state.ready) baseMain.innerHTML='<div class="p126-empty"><h2>正在準備歌曲…</h2></div>';
-    else {
-      updateSearchSurface();
-      if (opened) {
-        if (state.screen==="filter") main.innerHTML=renderFilter();
-        else if (state.screen==="add") main.innerHTML=renderAdd();
-        else if (state.screen==="people") main.innerHTML=renderPeople();
-        else if (state.screen==="playlist") updatePlaylistSurface();
-        else if (state.screen==="draw") main.innerHTML=renderDraw();
-        else if (state.screen==="draw-results") main.innerHTML=renderDrawResults();
-        else if (state.screen==="copy") main.innerHTML=renderCopy();
-        else if (state.screen==="room") main.innerHTML=renderRoom();
-        else if (state.screen==="room-settings") main.innerHTML=renderRoomSettings();
-        else if (state.screen==="room-history") main.innerHTML=renderRoomHistory();
-        else if (["groups","person-groups"].includes(state.screen)) main.innerHTML=renderGroups();
-        else if (state.screen==="delete-person") main.innerHTML=renderDelete();
-        else if (state.screen==="command") main.innerHTML='<p class="p126-note">正在確認變更…</p>'+editorActions();
-        else if (state.screen==="delete-group") main.innerHTML='<p class="p126-warning">刪除「'+escape(state.library.groups.find(group=>group.id===state.formValues.deleteGroup)?.name || "分組")+'」？</p><p>人物與全部歌曲會保留。</p>'+button("confirm-delete-group","確認刪除分組並保留人物",'data-group="'+escape(state.formValues.deleteGroup)+'" class="p126-danger"');
-        else if (state.screen==="void-room") main.innerHTML='<p class="p126-warning">將這次誤開包廂紀錄作廢？本月消耗會扣除當次點數，原紀錄仍保留。</p>'+button("confirm-void-room","確認作廢這次紀錄",'data-visit="'+escape(state.formValues.voidVisit)+'" class="p126-danger"');
-        else main.innerHTML=renderDetail();
-      }
+    header.querySelector('[data-action="draw"]').hidden=!!state.edit || !["search","playlist"].includes(state.screen);
+    status.textContent=state.notice; status.dataset.error=String(state.noticeError);
+    footer.textContent=typeof adapter.personalScopeText==="string" ? adapter.personalScopeText : state.library?'全部歌目唯讀 · 人物、分組與唱歌紀錄獨立保存':'固定歌目可搜尋 · 人物資料尚未載入';
+    if (!state.ready) main.innerHTML='<div class="p126-empty"><h2>正在準備歌曲…</h2></div>';
+    else if (state.screen==="search") updateSearchSurface();
+    else if (state.screen==="playlist") updatePlaylistSurface();
+    else if (state.screen==="filter") main.innerHTML=renderFilter();
+    else if (state.screen==="add") main.innerHTML=renderAdd();
+    else if (state.screen==="people") main.innerHTML=renderPeople();
+    else if (state.screen==="draw") main.innerHTML=renderDraw();
+    else if (state.screen==="draw-results") main.innerHTML=renderDrawResults();
+    else if (state.screen==="copy") main.innerHTML=renderCopy();
+    else if (state.screen==="room") main.innerHTML=renderRoom();
+    else if (state.screen==="room-settings") main.innerHTML=renderRoomSettings();
+    else if (state.screen==="room-history") main.innerHTML=renderRoomHistory();
+    else if (["groups","person-groups"].includes(state.screen)) main.innerHTML=renderGroups();
+    else if (state.screen==="delete-person") main.innerHTML=renderDelete();
+    else if (state.screen==="command") main.innerHTML='<p class="p126-note">正在確認變更…</p>'+editorActions();
+    else if (state.screen==="delete-group") main.innerHTML='<p class="p126-warning">刪除「'+escape(state.library.groups.find(group=>group.id===state.formValues.deleteGroup)?.name || "分組")+'」？</p><p>人物與全部歌曲會保留。</p>'+button("confirm-delete-group","確認刪除分組並保留人物",'data-group="'+escape(state.formValues.deleteGroup)+'" class="p126-danger"');
+    else if (state.screen==="void-room") main.innerHTML='<p class="p126-warning">將這次誤開包廂紀錄作廢？本月消耗會扣除當次點數，原紀錄仍保留。</p>'+button("confirm-void-room","確認作廢這次紀錄",'data-visit="'+escape(state.formValues.voidVisit)+'" class="p126-danger"');
+    else main.innerHTML=renderDetail();
+    if (state.ready && ["playlist","add","people"].includes(state.screen) && typeof adapter.personalScopeText==="string" && !main.querySelector('[data-personal-scope]')) {
+      const scope=document.createElement("p"); scope.className="p126-note p126-personal-scope";
+      scope.dataset.personalScope=""; scope.textContent=adapter.personalScopeText; main.prepend(scope);
+    }
+    // This hook only moves the adapter's existing backup DOM. It must not read
+    // or change library data, start requests, or register another listener.
+    if (state.ready && state.screen==="people" && typeof adapter.onPersonalSettingsRendered==="function") {
+      try { adapter.onPersonalSettingsRendered(main); }
+      catch { notice("此裝置的備份工具暫時無法顯示，歌單仍可使用。",true); }
     }
     if (busy() || state.pendingCommand) for (const node of main.querySelectorAll("button,input,select,textarea"))
       if (!(!busy() && ["save-edit","cancel-edit","save-room","save-room-settings"].includes(node.dataset.action))) node.disabled=true;
     const viewport=main.querySelector('.p126-viewport');
     if (viewport) {viewport.scrollTop=state.scroll[viewport.dataset.list] || 0;renderVirtual();}
-    state.renderedScreen=state.screen;updateCompactRoom();
-    if (opened && previousScreen!==state.screen) drawer.focus({preventScroll:true});
-    else restoreFocus(token);
-    if (!opened && wasOpened && drawerFocusReturn?.isConnected && drawerFocusReturn.tagName!=="SELECT") drawerFocusReturn.focus({preventScroll:true});
+    state.renderedScreen=state.screen; updateCompactRoom(); restoreFocus(token);
   }
   function renderVirtual() {
     const viewport = main && main.querySelector(".p126-viewport"), rows = viewport && viewport.querySelector(".p126-rows");
@@ -60699,8 +60486,8 @@ function createPersonalSongbook(adapter) {
     const token = focusToken();
     rows.style.height = values.length ? (values.length * height) + "px" : "auto";
     if (!values.length) {
-      rows.innerHTML = '<div class="p126-empty"><h2>' + (kind === "playlist" ? '歌單還沒有歌曲' : '沒有符合的歌曲') +
-        '</h2><p class="p126-note">' + (kind === "playlist" ? '回搜尋結果，將歌曲加入這個人物。' : '換個關鍵字，或調整篩選條件。') + '</p>' +
+      rows.innerHTML = '<div class="p126-empty"><h2>' + (kind === "playlist" ? '公開歌單目前沒有歌曲' : '沒有符合的歌曲') +
+        '</h2><p class="p126-note">' + (kind === "playlist" ? '可查看其他人物歌單，或返回歌曲搜尋。' : '換個關鍵字，或調整篩選條件。') + '</p>' +
         (kind === "search" ? button("clear", "清除搜尋與篩選") : "") + '</div>';
       return;
     }
@@ -60763,6 +60550,7 @@ function createPersonalSongbook(adapter) {
     state.searchTimer = setTimeout(() => { state.searchTimer = 0; void search(); }, 100);
   }
   async function openEdit(mode, ordinal) {
+    if (readOnly && mode !== "filter") return false;
     if (busy() || state.edit || state.pendingCommand || state.composing) return false;
     if (mode === "add" && !isSong(state.byOrdinal.get(ordinal))) { notice("原歌本欄標不是歌曲，不能新增到人物歌單。", true); return false; }
     if (mode === "filter") {
@@ -60945,7 +60733,7 @@ function createPersonalSongbook(adapter) {
         }
         const wasFilter = state.edit.mode === "filter";
         if (wasFilter) state.filters = { ...state.edit.filters };
-        const next = state.edit.returnTo || (state.edit.mode === "playlist" || state.edit.mode === "person-groups" || state.edit.mode === "groups" || state.edit.mode === "people" ? "playlist" : "search");
+        const next = state.edit.returnTo || (["playlist","person-groups","groups"].includes(state.edit.mode) ? "playlist" : "search");
         state.edit = null; state.pendingCommand = null; state.pendingKind = null; state.pendingAdopted = null; state.screen = next;
         notice(wasFilter ? "已套用本畫面的篩選條件。" : state.confirmedNotice);state.confirmedNotice="";
         await search(false);
@@ -60969,7 +60757,7 @@ function createPersonalSongbook(adapter) {
       try {
         if (await adapter.discardEdit() !== true) { notice("尚未確認捨棄，原輸入與排序仍保留。", true); return false; }
         const wasFilter = state.edit.mode === "filter";
-        const target = state.edit.returnTo || (["playlist","person-groups","groups","people"].includes(state.edit.mode) ? "playlist" : "search");
+        const target = state.edit.returnTo || (["playlist","person-groups","groups"].includes(state.edit.mode) ? "playlist" : "search");
         state.edit = null; state.pendingCommand = null; state.pendingKind = null; state.pendingAdopted = null; state.screen = target;
         if (!wasFilter) await readLibrary();
         await search(false);
@@ -61010,21 +60798,13 @@ function createPersonalSongbook(adapter) {
   }
   async function act(target) {
     const action = target.dataset.action;
+    if (readOnly && (!readOnlyActions.has(action) || (["save-edit","cancel-edit"].includes(action) && state.edit?.mode !== "filter"))) return;
     if (action === "retry-init") { await init(); return; }
     if (!state.ready || busy() || state.composing || state.drag) return;
     if (action === "save-edit" || (state.pendingCommand && ["save-room","save-room-settings"].includes(action))) { await finishSettings(); return; }
     if (action === "cancel-edit") { await cancelEdit(); return; }
     if (state.pendingCommand) return;
 
-    if (action === "load-published-people") {
-      if(state.edit?.mode!=="people"||typeof adapter.preparePublishedPeople!=="function")return;
-      if(state.edit.newName!==""||!equal(state.edit.order,state.edit.baseOrder)||[...state.edit.names].some(([id,name])=>name!==state.edit.baseNames.get(id))){notice("請先儲存或取消人物設定的變更，再載入已發布歌單。",true);return;}
-      const pending=(async()=>{try{return await adapter.preparePublishedPeople();}catch{notice("公開歌單無法載入或未通過檢查，原資料與畫面保留。",true);return null;}finally{state.opening=null;}})();
-      state.opening=pending;render();const publication=await pending;
-      if(!publication){render();return;}
-      state.edit={mode:"command",command:{type:"apply_published_people",publication},returnTo:"playlist"};state.screen="command";
-      await finishSettings();return;
-    }
     if (action === "appearance") { await appearance(); return; }
     if (action === "open-room" || action === "room-settings") {
       if(state.edit && !await finishSettings())return;
@@ -61078,9 +60858,10 @@ function createPersonalSongbook(adapter) {
     if (action === "confirm-delete-group") {await runCommand({type:"delete_group",group_id:target.dataset.group},"playlist");return;}
     if (action === "pick-sources") {
       if(!isClean() || !state.libraryAvailable)return;
-      state.copySourceChanged=false;state.copyPeople=new Set(state.people.has(state.selectedPerson)?[state.selectedPerson]:[]);state.copyStage="people";state.copyFallback="";state.screen="copy";render();return;
+      state.copyMode="picks";state.copySourceChanged=false;state.copyPeople=new Set(state.people.has(state.selectedPerson)?[state.selectedPerson]:[]);state.copyStage="people";state.copyFallback="";state.screen="copy";render();return;
     }
     if (action === "pick-songs") {
+      if (state.copyMode!=="picks" || state.screen!=="copy") return;
       const seen=new Set(),values=[];
       for(const person of state.library.people)if(state.copyPeople.has(person.id))for(const entry of person.entries)if(isSong(state.byOrdinal.get(entry.ordinal)) && !seen.has(entry.ordinal)){seen.add(entry.ordinal);values.push(entry.ordinal);}
       state.copyCandidates=values;state.copyOrdinals=new Set([...state.copyOrdinals].filter(ordinal=>seen.has(ordinal)));state.copyStage="songs";state.copyFallback="";state.formValues.pickQuery="";state.pickerLimit=100;render();return;
@@ -61092,10 +60873,10 @@ function createPersonalSongbook(adapter) {
 
     if (action === "copy-playlists") {
       if (!isClean() || !state.libraryAvailable) { notice("請先完成編輯，或重新載入已儲存的歌單。", true); return; }
-      state.copySourceChanged=false;state.copyStage="people";state.copyPeople = new Set(state.people.has(state.selectedPerson) ? [state.selectedPerson] : []);
+      state.copyMode="playlists";state.copySourceChanged=false;state.copyStage="people";state.copyPeople = new Set(state.people.has(state.selectedPerson) ? [state.selectedPerson] : []);
       state.copyFallback = ""; state.screen = "copy"; notice(""); render(); return;
     }
-    if (action === "copy-saved-playlists") { await copySavedPlaylists(); return; }
+    if (action === "copy-saved-playlists") { if(state.copyMode==="playlists") await copySavedPlaylists(); return; }
     if (action === "copy-back") {
       state.copyPeople.clear(); state.copyFallback = ""; state.screen = "playlist"; notice(""); render(); return;
     }
@@ -61272,12 +61053,6 @@ function createPersonalSongbook(adapter) {
     });
 
     root.addEventListener("keydown", event => {
-      if(event.key==="Tab" && !overlay.hidden) {
-        const nodes=[...overlay.querySelectorAll('button:not(:disabled),input:not(:disabled),select:not(:disabled),textarea:not(:disabled),[tabindex="0"]')].filter(node=>node.getClientRects().length);
-        if(nodes.length){const first=nodes[0],last=nodes[nodes.length-1],active=root.ownerDocument.activeElement;if(event.shiftKey && (active===first || active===drawer)){event.preventDefault();last.focus();}else if(!event.shiftKey && (active===last || active===drawer)){event.preventDefault();first.focus();}}
-      }
-      if(event.key==="Escape" && !overlay.hidden && !busy() && !state.composing){event.preventDefault();void act(backButton);return;}
-
       if (event.key === "Escape" && ["draw", "draw-results"].includes(state.screen) && isClean()) {
         state.screen = state.drawReturn; render(); return;
       }
@@ -61338,116 +61113,42 @@ function createPersonalSongbook(adapter) {
   }
   return Object.freeze({ init, bind, finishSettings, isClean, sessionClean, refreshSaved, refreshLibrary });
 }
-
-
-/* Browser-only UI adapter. No host session, private API, or native lifecycle hook. */
-function readGithubLegacyPreferences(storage) {
-  const value=JSON.parse(JSON.stringify(P126GithubStorage.defaultPreferences));
-  try {
-    if(storage===undefined)storage=globalThis.localStorage;
-    const theme=storage?.getItem("songbook_theme");if(["light","dark"].includes(theme))value.theme=theme;
-    const raw=storage?.getItem("songbook_shown_cols_v2");
-    if(typeof raw==="string"&&raw.length<=4096){const shown=JSON.parse(raw);if(shown&&typeof shown==="object"&&!Array.isArray(shown)&&Object.keys(shown).every(key=>Object.hasOwn(value.shown,key))){for(const key of Object.keys(value.shown))if(typeof shown[key]==="boolean")value.shown[key]=shown[key];}}
-  } catch { /* Optional legacy appearance is preserved untouched, never erased. */ }
-  return value;
-}
-
-async function createGithubPeopleBridge(engine, initialPreferences) {
-  let ui=null,library=null,guard=null,opening=null,mutation=null,mutationFlight=null,changeFlight=null,changeKey=null,discardFlight=null,finishFlight=null;
-  let appearance=null,appearanceReturnFocus=null,appearanceFlight=null,preferencePending=null,savedPreferences=JSON.parse(JSON.stringify(initialPreferences));
-  const tab=crypto.randomUUID(),clone=value=>JSON.parse(JSON.stringify(value));
-  const failure=code=>Object.assign(new Error(code),{code,status:409});
-  const tell=text=>{const target=document.getElementById("p126BridgeNotice");if(target){target.textContent=text;target.hidden=!text;}};
-  const applyPreferences=value=>{savedPreferences=clone(value);document.documentElement.dataset.theme=value.theme;if(ui)ui.refreshSaved(value);};
-  async function readLibrary(){const fresh=await engine.readLibrary();if(library&&(fresh.library_id!==library.library_id||fresh.revision<library.revision))throw failure("library_identity_changed");return fresh;}
-  function beginEdit(){
-    if(opening)return opening;if(guard)return Promise.resolve(true);
-    opening=(async()=>{try{const latest=await engine.readPreferences();if(!library)library=await readLibrary();guard={id:crypto.randomUUID(),library:clone(library),preferencesRevision:latest.revision};savedPreferences=clone(latest.value);return true;}catch{tell("此瀏覽器的資料尚未就緒，原畫面已保留。請重試。");return false;}finally{opening=null;}})();return opening;
-  }
-  function performMutation(){
-    if(mutationFlight)return mutationFlight;const owned=mutation;if(!owned)return Promise.reject(failure("no_pending_change"));if(owned.confirmed)return Promise.resolve(clone(owned.confirmed));
-    mutationFlight=(async()=>{try{const result=await engine.mutate(owned.envelope,owned.scope);guard.library={library_id:result.snapshot.library_id,catalog_sha256:result.snapshot.catalog_sha256,revision:result.mutation_revision};owned.confirmed={mutation_revision:result.mutation_revision,snapshot:clone(result.snapshot),command_result:clone(result.command_result)};return clone(owned.confirmed);}catch(e){owned.rejected=Number.isInteger(e.status)&&e.status>=400&&e.status<500;throw e;}finally{mutationFlight=null;}})();return mutationFlight;
-  }
-  function changeLibrary(command){
-    const key=JSON.stringify(command);
-    if(changeFlight)return changeKey===key?changeFlight:Promise.reject(failure("previous_change_unconfirmed"));
-    changeKey=key;
-    changeFlight=(async()=>{if(!guard||appearance||preferencePending)throw failure("editing_not_ready");if(mutation&&mutation.commandKey!==key)throw failure("previous_change_unconfirmed");const owned=guard;
-      if(!mutation){const wire=clone(command);if(wire.type==="add_song")wire.row_sha256=await engine.rowDigest(wire.ordinal);if(guard!==owned)throw failure("editing_not_ready");mutation={commandKey:key,rejected:false,scope:{tab_id:tab,draft_id:owned.id},envelope:{library_id:owned.library.library_id,catalog_sha256:owned.library.catalog_sha256,expected_revision:owned.library.revision,operation_id:crypto.randomUUID(),command:wire}};}
-      return performMutation();})().finally(()=>{changeFlight=null;changeKey=null;});
-    return changeFlight;
-  }
-  function discardEdit(){
-    if(discardFlight)return discardFlight;
-    discardFlight=(async()=>{try{if(opening)await opening;if(changeFlight){try{await changeFlight;}catch{}}if(mutationFlight){try{await mutationFlight;}catch{}}if(mutation&&!mutation.rejected&&!mutation.confirmed){try{await performMutation();}catch{return false;}}if(preferencePending&&!preferencePending.rejected)return false;const latest=await engine.readPreferences();guard=null;mutation=null;preferencePending=null;applyPreferences(latest.value);return true;}catch{tell("尚未確認儲存結果，原輸入已保留。請重試。");return false;}})().finally(()=>discardFlight=null);return discardFlight;
-  }
-  function closeAppearance(){if(appearance){appearance.remove();appearance=null;}const root=document.getElementById("personalSongbook");if(root)root.inert=false;if(appearanceReturnFocus?.isConnected)appearanceReturnFocus.focus({preventScroll:true});appearanceReturnFocus=null;tell("");}
-  function finishPreferences(value){
-    if(appearanceFlight)return appearanceFlight;
-    appearanceFlight=(async()=>{try{if(!guard)return false;if(!preferencePending)preferencePending={value:clone(value),base:guard.preferencesRevision,id:crypto.randomUUID(),rejected:false};const owned=preferencePending,result=await engine.savePreferences(owned.value,owned.base,owned.id);guard=null;preferencePending=null;applyPreferences(result.value);closeAppearance();return true;}catch(e){if(preferencePending)preferencePending.rejected=Number.isInteger(e.status)&&e.status>=400&&e.status<500;tell(preferencePending?.rejected?"外觀設定與另一個分頁衝突。可取消並載入最新設定。":"瀏覽器尚未確認外觀保存；內容仍保留，請重試。");if(appearance){appearance.querySelectorAll("input").forEach(input=>input.disabled=true);const button=appearance.querySelector('[data-pref="save"]');if(button)p126SetControlButton(button,"save","重試儲存外觀設定");}return false;}})().finally(()=>appearanceFlight=null);return appearanceFlight;
-  }
-  async function openAppearance(){
-    if(appearance)return;if(!await beginEdit())return;
-    appearanceReturnFocus=document.activeElement;appearance=document.createElement("section");appearance.className="p126-appearance";appearance.setAttribute("role","dialog");appearance.setAttribute("aria-modal","true");appearance.setAttribute("aria-label","外觀設定");
-    const title=document.createElement("h2");title.textContent="外觀設定";const form=document.createElement("div");
-    for(const [key,label] of [["theme","淺色模式"],["lang","顯示語言"],["len","顯示字數"],["who","顯示所屬人物"],["page","顯示頁碼"]]){const line=document.createElement("label"),input=document.createElement("input");input.type="checkbox";input.dataset.key=key;input.checked=key==="theme"?savedPreferences.theme==="light":savedPreferences.shown[key];line.append(input,document.createTextNode(label));form.append(line);}
-    const values=()=>{const next=clone(savedPreferences);for(const input of form.querySelectorAll("input")){if(input.dataset.key==="theme")next.theme=input.checked?"light":"dark";else next.shown[input.dataset.key]=input.checked;}return next;};
-    const save=document.createElement("button"),cancel=document.createElement("button");save.dataset.pref="save";p126SetControlButton(save,"save","儲存外觀設定");p126SetControlButton(cancel,"cancel","取消外觀設定");
-    const cancelAppearance=async()=>{if(appearanceFlight)return;if(preferencePending&&!preferencePending.rejected){await finishPreferences(values());return;}if(await discardEdit())closeAppearance();};
-    save.addEventListener("click",()=>void finishPreferences(values()));cancel.addEventListener("click",()=>void cancelAppearance());
-    appearance.addEventListener("keydown",event=>{if(event.key==="Escape"){event.preventDefault();void cancelAppearance();}if(event.key==="Tab"){const nodes=[...appearance.querySelectorAll("button,input")].filter(node=>!node.disabled);if(nodes.length&&((event.shiftKey&&document.activeElement===nodes[0])||(!event.shiftKey&&document.activeElement===nodes[nodes.length-1]))){event.preventDefault();nodes[event.shiftKey?nodes.length-1:0].focus();}}});
-    appearance.append(title,form,save,cancel);document.querySelector(".wrap").append(appearance);const root=document.getElementById("personalSongbook");if(root)root.inert=true;appearance._values=values;save.focus({preventScroll:true});
-  }
-  async function preparePublishedPeople(){
-    if(!guard||mutation||appearance||preferencePending)throw failure("editing_not_ready");
-    const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),15000);
-    try{
-      const value=await P126PublishedPeople.load({signal:controller.signal});
-      const prepared=await P126PublishedPeople.prepare(value,{songs:window.SONGS,catalogSha256:PHTOOLS_CATALOG_SHA,nonSongOrdinals:P126_CATALOG_CORRECTIONS.non_song_records.map(row=>row.ordinal)});
-      return confirm("載入已發布的 "+prepared.people.length+" 位人物、"+prepared.entry_count+" 筆歌曲歸屬？\n這會取代此瀏覽器的人物、分組及歌單（包含你在此刪除或修改的內容）；包廂紀錄、點數設定與外觀會保留。")?prepared.payload:null;
-    }finally{clearTimeout(timer);}
-  }
-  const isClean=()=>!guard&&!opening&&!mutation&&!mutationFlight&&!changeFlight&&!discardFlight&&!appearance&&!appearanceFlight&&!preferencePending&&(!ui||ui.isClean());
-  function finishSettings(){if(finishFlight)return finishFlight;finishFlight=(async()=>{if(ui&&!await ui.finishSettings())return false;if(appearance&&!await finishPreferences(appearance._values()))return false;if(opening)await opening;if((guard||mutation)&&!await discardEdit())return false;return isClean();})().finally(()=>finishFlight=null);return finishFlight;}
-  async function refreshLibrary(){if(!isClean())return false;const latest=await engine.readPreferences();applyPreferences(latest.value);return !ui||await ui.refreshLibrary()===true;}
-  return Object.freeze({preparePublishedPeople,readLibrary,beginEdit,discardEdit,changeLibrary,finishPreferences,openAppearance,isClean,finishSettings,refreshLibrary,
-    acceptLibrary:value=>{library=clone(value);},acceptMutation:command=>{if(!mutation?.confirmed||mutation.commandKey!==JSON.stringify(command))throw failure("mutation_acceptance_mismatch");mutation=null;},
-    bindUI:value=>{ui=value;applyPreferences(savedPreferences);}});
-}
-
-async function bootGithubSongbook() {
+/* The published website reads fixed public resources into RAM only.
+   Existing browser personal databases are never opened, upgraded or removed. */
+async function bootReadonlyGithubSongbook() {
   const root=document.getElementById("personalSongbook");
-  let engine=null;
+  const readonlyFailure=()=>Object.assign(new Error("readonly_public_songbook"),{code:"readonly_public_songbook",status:403});
+  const deny=async()=>{throw readonlyFailure();};
   try {
     const rawSongs=window.SONGS;
     for(const song of rawSongs)Object.freeze(song);Object.freeze(rawSongs);
     const songs=rawSongs.map((song,ordinal)=>Object.freeze({...song,ordinal}));
     await createCatalogProjection(songs);
-    let publication=null,publicationFailed=false;
-    const controller=new AbortController(),publicationTimer=setTimeout(()=>controller.abort(),15000);
-    try{const value=await P126PublishedPeople.load({signal:controller.signal});publication=(await P126PublishedPeople.prepare(value,{songs:rawSongs,catalogSha256:PHTOOLS_CATALOG_SHA,nonSongOrdinals:P126_CATALOG_CORRECTIONS.non_song_records.map(row=>row.ordinal)})).payload;}
-    catch{publicationFailed=true;}finally{clearTimeout(publicationTimer);}
-    engine=await P126GithubStorage.create({initialPublication:publication,requireInitialPublication:true,songs:rawSongs,catalogSha256:PHTOOLS_CATALOG_SHA,nonSongOrdinals:P126_CATALOG_CORRECTIONS.non_song_records.map(row=>row.ordinal),initialPreferences:readGithubLegacyPreferences()});
-    const bridge=await createGithubPeopleBridge(engine,engine.initial.preferences.value);
-    const book=createPersonalSongbook({root,songs,initialPreferences:engine.initial.preferences.value,preparePublishedPeople:bridge.preparePublishedPeople,readLibrary:bridge.readLibrary,beginEdit:bridge.beginEdit,discardEdit:bridge.discardEdit,changeLibrary:bridge.changeLibrary,finishPreferences:bridge.finishPreferences,openAppearance:bridge.openAppearance,onLibraryAccepted:bridge.acceptLibrary,onMutationAccepted:bridge.acceptMutation,onNotice:()=>{}});
-    bridge.bindUI(book);await book.init();book.bind();
-    if(publicationFailed){const target=document.getElementById("p126BridgeNotice");if(target){target.textContent="公開歌單暫時無法讀取；此瀏覽器原有人物資料已保留。";target.hidden=false;}}
-    const footer=root.querySelector(".p126-foot");if(footer)footer.textContent="GitHub版：歌目是內嵌固定資源；人物與包廂只存此瀏覽器。初次使用載入已發布的人物歌單；之後不會自動覆蓋此瀏覽器修改。時間取自此裝置，不會與主機或其他裝置自動同步。";
-    const backup=document.createElement("details"),summary=document.createElement("summary"),note=document.createElement("p"),exportButton=document.createElement("button"),fileLabel=document.createElement("label"),fileInput=document.createElement("input"),restoreButton=document.createElement("button"),message=document.createElement("p");
-    summary.textContent="此瀏覽器的人物資料備份";note.textContent="匯出只包含人物歸屬、分組、唱歌紀錄與偏好，不含完整歌目。還原限同一資料庫的備份；不同裝置或已清除站點資料的身分不符時會拒絕。";
-    p126SetControlButton(exportButton,"copy","下載此瀏覽器人物資料備份");p126SetControlButton(restoreButton,"reset","還原已選的同庫備份");fileLabel.textContent="選擇同庫備份 ";fileInput.type="file";fileInput.accept="application/json,.json";fileInput.setAttribute("aria-label","選擇同一人物資料庫的JSON備份");fileLabel.append(fileInput);message.setAttribute("role","status");
-    exportButton.addEventListener("click",async()=>{try{if(!await bridge.finishSettings())return;const value=await engine.exportData(),blob=new Blob([JSON.stringify(value,null,2)+"\n"],{type:"application/json;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="二結點歌本-人物資料-"+new Date().toISOString().slice(0,10)+".json";document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);message.textContent="已準備此瀏覽器的備份檔。";}catch{message.textContent="無法完成匯出，現有資料保留。";}});
-    restoreButton.addEventListener("click",async()=>{try{if(!await bridge.finishSettings())return;const file=fileInput.files?.[0];if(!file||file.size>64*1024*1024){message.textContent="請選擇64MB以內的同庫JSON備份。";return;}const value=JSON.parse(await file.text()),current=await engine.readLibrary();if(!confirm("以所選備份取代此瀏覽器的人物、分組、唱歌紀錄與偏好？完整歌目不變。"))return;await engine.restoreData(value,current.revision);await bridge.refreshLibrary();fileInput.value="";message.textContent="同庫備份已還原。";}catch{message.textContent="備份格式、資料身分或目前版本不符，未還原；現有資料保留。";}});
-    backup.append(summary,note,exportButton,fileLabel,restoreButton,message);root.append(backup);
-    window.addEventListener("beforeunload",event=>{if(!bridge.isClean()){event.preventDefault();event.returnValue="";}});
-    let refreshing=false;
-    const refresh=()=>{if(document.visibilityState==="hidden"||refreshing||!bridge.isClean())return;refreshing=true;bridge.refreshLibrary().catch(()=>{}).finally(()=>refreshing=false);};
-    document.addEventListener("visibilitychange",refresh);window.addEventListener("focus",refresh);window.addEventListener("pageshow",refresh);
-  } catch(e) {
-    engine?.close();
-    root.replaceChildren();const title=document.createElement("h2"),text=document.createElement("p");title.textContent="此瀏覽器的歌單暫時無法開啟";text.textContent=(e?.code==="publication_unavailable"?"公開人物歌單尚未載入，請稍後重新整理。尚未建立空白人物庫。 ":"")+"請確認此站可使用瀏覽器儲存空間與HTTPS。若資料格式或身分不符，請保留原資料與備份，再處理相容性；本頁不會自動清空資料或建立另一份歌單。";root.append(title,text);
+    const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),15000);
+    let published;
+    try {
+      published=await P126PublishedPeople.prepare(await P126PublishedPeople.load({signal:controller.signal}),{
+        songs:rawSongs,catalogSha256:PHTOOLS_CATALOG_SHA,
+        nonSongOrdinals:P126_CATALOG_CORRECTIONS.non_song_records.map(row=>row.ordinal)
+      });
+    } finally {clearTimeout(timer);}
+    const snapshot={library_id:crypto.randomUUID(),schema_version:2,catalog_sha256:PHTOOLS_CATALOG_SHA,revision:1,
+      people:published.people,groups:published.groups,room_settings:{average_song_seconds:270,points_per_open_milli:0},
+      singing_visits:[],room_now_utc:new Date().toISOString(),monthly_points_milli:{}};
+    const clone=value=>JSON.parse(JSON.stringify(value));
+    const scope="唯讀公開歌單 · 勾選僅供本次複製";
+    root.classList.add("p126-readonly");
+    const book=createPersonalSongbook({root,songs,readOnly:true,personalScopeText:scope,
+      initialPreferences:{theme:"dark",shown:{lang:true,len:true,who:true,page:true,book:true}},
+      readLibrary:async()=>clone(snapshot),beginEdit:deny,changeLibrary:deny,finishPreferences:deny,
+      discardEdit:async()=>true,openAppearance:deny,onNotice:()=>{}});
+    await book.init();book.bind();
+  } catch {
+    root.replaceChildren();const title=document.createElement("h2"),text=document.createElement("p");
+    title.textContent="唯讀歌本暫時無法載入";
+    text.textContent="公開歌目或人物歌單尚未完成核對，請稍後重新整理。原有瀏覽器個人資料保持不變。";
+    root.append(title,text);
   }
 }
-
-void bootGithubSongbook();
+void bootReadonlyGithubSongbook();
 </script></body></html>
